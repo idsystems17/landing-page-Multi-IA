@@ -1,0 +1,6 @@
+{
+  "name": "Método Multi-IA",
+  "description": "Página de Vendas de Alta Conversão para o Método Multi-IA, otimizada para Google Ads com simulador financeiro, gerador de prompts e certificado de conclusão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
