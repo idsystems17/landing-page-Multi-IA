@@ -68,8 +68,8 @@ export default function CheckoutModal({ isOpen, onClose, initialPrice = 37.90 }:
           <div className="flex items-center gap-2">
             <ShieldCheck className="text-orange-500 h-5 w-5" />
             <div>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-orange-500 font-bold block leading-none">Ambiente 100% Seguro</span>
-              <h4 className="text-sm font-bold text-white tracking-tight uppercase mt-1">Finalizar Inscrição — Método Multi-IA</h4>
+               <span className="text-[10px] uppercase font-mono tracking-widest text-orange-500 font-bold block leading-none">Ambiente 100% Seguro</span>
+               <h4 className="text-sm font-bold text-white tracking-tight uppercase mt-1">Garantir Acesso — E-book Interativo Multi-IA</h4>
             </div>
           </div>
           <button
@@ -117,7 +117,7 @@ export default function CheckoutModal({ isOpen, onClose, initialPrice = 37.90 }:
             <div className="bg-[#0a0a0a] rounded-sm p-4 flex items-center justify-between border border-white/10">
               <div>
                 <span className="text-[10px] uppercase font-mono text-gray-500">Produto Selecionado</span>
-                <span className="text-xs text-white font-bold block uppercase tracking-tight">Método Multi-IA (Acesso Vitalício)</span>
+                <span className="text-xs text-white font-bold block uppercase tracking-tight">E-book Interativo Multi-IA (Acesso por 1 Ano)</span>
               </div>
               <div className="text-right">
                 <span className="text-[10px] uppercase font-mono text-orange-500 block font-bold leading-normal">Total a Pagar</span>

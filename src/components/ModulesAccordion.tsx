@@ -8,87 +8,70 @@ export default function ModulesAccordion() {
     {
       id: 1,
       number: "01",
-      title: "Fundamentos da Orquestração Multi-IA",
-      subtitle: "Fazer as melhores IAs gratuitas trabalharem integradas de forma autônoma.",
+      title: "Fundamentos Multi-IA",
+      subtitle: "O Segredo da Orquestração: Por Que Uma IA Só Não Basta. Aprenda a criar um funil de IAs gratuitas para automatizar tarefas lógicas.",
       icon: Layers,
       color: "from-orange-600/20 to-red-500/10",
       accent: "text-orange-400",
       lessons: [
-        "Por que as assinaturas Pro (ChatGPT Plus/Claude Pro) são desnecessárias se você souber integrá-los",
-        "O Protocolo de Orquestração: distribuindo tarefas lógicas para a IA com melhor especialidade",
-        "Configurando loops de auto-revisão: fazendo o Claude refinar o output do Gemini de forma automática",
+        "Por que as assinaturas Pro (ChatGPT Plus/Claude Pro) são totalmente desnecessárias",
+        "O Protocolo de Orquestração: distribuindo tarefas para a IA com melhor especialidade lúdica",
+        "Configurando loops de auto-revisão: fazendo as ferramentas corrigirem o output umas das outras",
         "Como contornar limites de taxa e tokens com contas totalmente gratuitas",
         "Template mestre de fluxo de trabalho de orquestração estruturada"
       ],
-      tag: "Fundação"
+      tag: "10 min • Fácil"
     },
     {
       id: 2,
       number: "02",
-      title: "e-Books de Rápida Conversão (Estratégia Tripwire)",
-      subtitle: "Estruture e redija infoprodutos magnéticos de rápida decisão de compra.",
-      icon: BookOpen,
-      color: "from-indigo-600/20 to-purple-500/10",
-      accent: "text-indigo-400",
+      title: "Vídeos Dark Automatizados",
+      subtitle: "Canal Dark de Vídeos no YouTube/TikTok: Escala Máxima. Seja dono de um império de canais de retenção absurda sem nunca revelar seu rosto.",
+      icon: Video,
+      color: "from-[#ec4899]/20 to-[#a855f7]/10",
+      accent: "text-pink-400",
       lessons: [
-        "A Coleção Emocional do ChatGPT: gerando títulos e ganchos psicológicos impossíveis de ignorar",
-        "Validação de Gemini: pesquisando teses científicas, fontes legítimas e fatos reais para criar autoridade",
-        "Filtro de Humanização no Claude.ai: reescrevendo blocos robóticos com textura humana e ganchos narrativos",
-        "Design Automatizado: gerando layouts profissionais em segundos sem contratar designers",
-        "Engenharia reversa de e-books campeões de vendas do nicho de saúde, finanças e marketing"
+        "A Anatomia do Roteiro Viral: gerando retenção ultra-alta usando ganchos de 3 segundos",
+        "Leonardo.ai Avançado: gerando imagens estéticas com prompts fotográficos e iluminação de cinema",
+        "Vozes Sintéticas Ultra-Articuladas: criando narrações profissionais impossíveis de distinguir de humanos",
+        "Montagem Acelerada no CapCut: aplicando ganchos visuais e legendas dinâmicas em blocos automáticos",
+        "O algoritmo passo a passo para Reels, Shorts e TikTok viralizar nos primeiros 7 dias"
       ],
-      tag: "Escrita de Elite"
+      tag: "15 min • Médio"
     },
     {
       id: 3,
       number: "03",
-      title: "Máquina de Vídeos Virais e Canais Dark",
-      subtitle: "Aprenda a criar roteiros magnéticos e artes ultra-fotorrealistas para vender sem aparecer.",
-      icon: Video,
-      color: "from-violet-600/20 to-fuchsia-500/10",
-      accent: "text-fuchsia-400",
+      title: "Infoprodutores de Alta Velocidade",
+      subtitle: "Venda de E-books de R$ 19,90 a R$ 97,00 (O Funil Modular de Alta Conversão). Como criar produtos irresistíveis de impulso (Tripwires) com bônus estruturados.",
+      icon: BookOpen,
+      color: "from-[#3b82f6]/20 to-[#06b6d4]/10",
+      accent: "text-blue-400",
       lessons: [
-        "A Anatomia do Roteiro Viral: gerando retenção alta usando as fases gancho-história-oferta",
-        "Leonardo.ai Avançado: gerando imagens estéticas com prompts fotográficos, luz de estúdio e ângulos dinâmicos",
-        "Vozes Sintéticas Ultra-Articuladas: criando narrações profissionais impossíveis de distinguir de humanos",
-        "Montagem Acelerada no CapCut: aplicando ganchos visuais e legendas dinâmicas de alta retenção",
-        "A receita de postagem para TikTok, Reels e YouTube Shorts para viralizar nos primeiros 7 dias"
+        "A Coleção Emocional do ChatGPT: gerando títulos e ganchos psicológicos impossíveis de ignorar",
+        "Validação de Gemini: pesquisando teses científicas, fontes legítimas e fatos reais para criar autoridade",
+        "Filtro de Humanização no Claude.ai: reescrevendo blocos robóticos com textura humana e naturalidade",
+        "Implementação prática do Order Bump: como vender um produto extra direto no checkout",
+        "Criação de páginas estáticas de alta velocidade de carregamento sem gastar nada"
       ],
-      tag: "Audiovisual Dark"
+      tag: "18 min • Fácil"
     },
     {
       id: 4,
       number: "04",
-      title: "Gerador Estratégico de Prompts & Roadmaps",
-      subtitle: "Sua biblioteca particular de mega-prompts prontos para copiar, colar e produzir.",
+      title: "Freelancer Profissional de Elite",
+      subtitle: "Prestação de Serviços High-Ticket no Fiverr e Workana. Aprenda a orquestrar propostas impecáveis em Dólar e entregar pacotes de artigos de SEO ou copy.",
       icon: Terminal,
-      color: "from-emerald-600/20 to-teal-500/10",
+      color: "from-[#10b981]/20 to-[#14b8a6]/10",
       accent: "text-emerald-400",
       lessons: [
-        "Instruções Mestres de Persona: transformando a IA em diretores e editores de alta qualidade",
+        "Instruções Mestres de Persona: transformando a IA em diretores e editores de alta performance",
         "Mega-prompts de Escrita Criativa: controle rigoroso de cadência, vocabulário e formatação de texto",
-        "O Criador de Roadmaps de Aprendizado: monte guias práticos e bônus em PDF em menos de 10 minutos",
-        "Depuração de prompts: como calibrar a temperatura e parâmetros ocultos das ferramentas",
-        "Atualizações contínuas: lista atualizada de novos comandos para os novos motores das IAs"
+        "A receita exata para fechar contratos de R$ 2.000 a R$ 5.000 mensais no mercado internacional",
+        "Como automatizar a entrega de relatórios de auditoria e briefings para encantar clientes premium",
+        "Pacotes Express de SEO: gerando conteúdo mestre otimizado em escala com orquestração"
       ],
-      tag: "Códigos de Operação"
-    },
-    {
-      id: 5,
-      number: "05",
-      title: "O Funil Gerador de Caixa",
-      subtitle: "A fórmula exata de cadastrar produtos de R$ 19,90 a R$ 97,00 e triplicar o ticket médio.",
-      icon: TrendingUp,
-      color: "from-amber-600/20 to-yellow-500/10",
-      accent: "text-amber-400",
-      lessons: [
-        "Configurando o produto na plataforma de vendas: Kiwify, Hotmart ou Monetizze em 15 minutos",
-        "A oferta irresistível de R$ 19,90 a R$ 97,00 (O segredo do funil tripwire de alta conversão)",
-        "Implementação prática do Order Bump: como adicionar um produto complementar no checkout e vender mais",
-        "A Engenharia do Upsell Instantâneo: oferecendo a continuação perfeita após o pagamento",
-        "Análise de métricas fundamentais: CPC, CTR do anúncio e ROI líquido para investir R$ 10 e voltar R$ 30"
-      ],
-      tag: "Vendas e Escala"
+      tag: "12 min • Médio"
     }
   ];
 
@@ -100,10 +83,10 @@ export default function ModulesAccordion() {
     <div className="w-full max-w-4xl mx-auto space-y-4 px-4">
       <div className="text-center mb-8">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-600/10 text-orange-400 border border-orange-600/25 rounded-sm text-xs font-mono font-bold tracking-widest uppercase mb-3">
-          <Sparkles size={12} className="text-orange-400 animate-spin" /> MAESTRIA PASSO A PASSO
+          <Sparkles size={12} className="text-orange-400 animate-spin" /> ACESSO IMEDIATO
         </span>
         <h3 id="curriculum" className="text-2xl md:text-3xl font-extrabold text-white tracking-tight uppercase">
-          O Que Você Vai Dominar No Método
+          As Aulas Práticas do E-book Interativo
         </h3>
         <p className="text-gray-400 text-sm mt-2 max-w-xl mx-auto font-sans font-light">
           Um roteiro estruturado do absoluto zero à escala máxima, sem enrolação ou teorias vazias.

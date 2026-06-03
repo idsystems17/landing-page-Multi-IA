@@ -9,22 +9,22 @@ export default function FAQSection() {
     {
       id: 1,
       question: "Eu realmente não vou precisar pagar nenhuma assinatura de Inteligência Artificial?",
-      answer: "Exatamente. Todo o pilar lógico do Método Multi-IA baseia-se na orquestração complementar de ferramentas gratuitas. Você vai aprender a usar as versões gratuitas do ChatGPT, Claude.ai e Google Gemini em sinergia, obtendo resultados superiores aos de quem simplesmente copia e cola prompts genéricos em uma única ferramenta premium. Leonardo.ai e CapCut também serão utilizados em seus planos gratuitos."
+      answer: "Exatamente. Todo o pilar lógico do E-book Multi-IA baseia-se na orquestração complementar de ferramentas gratuitas. Você vai aprender a usar as versões gratuitas do ChatGPT, Claude.ai e Google Gemini em sinergia, obtendo resultados superiores aos de quem simplesmente copia e cola prompts genéricos em uma única ferramenta premium. Leonardo.ai e CapCut também serão utilizados em seus planos gratuitos."
     },
     {
       id: 2,
       question: "Preciso ter conhecimento avançado, saber programar ou entender de tecnologia?",
-      answer: "Absolutamente não. A metodologia foi desenvolvida didaticamente passo a passo em vídeo para criadores, redatores, afiliados e profissionais liberais. Se você sabe abrir um navegador de internet, enviar mensagens e acompanhar tutoriais simples na tela, você já possui pré-requisito total para dominar a orquestração de IAs."
+      answer: "Absolutamente não. A metodologia foi desenvolvida didaticamente passo a passo em tópicos práticos para criadores, redatores, afiliados e profissionais liberais. Se você sabe abrir um navegador de internet, enviar mensagens e acompanhar tutoriais simples na tela, você já possui pré-requisito total para dominar a orquestração de IAs."
     },
     {
       id: 3,
       question: "Como funciona a Garantia de Reembolso Incondicional por 7 dias?",
-      answer: "Seu risco é zero. Ao se inscrever hoje, você recebe acesso completo a todos os módulos, mega-prompts, simuladores e apostilas mestre. Se em até 7 dias corridos você decidir que o conteúdo não é prático o suficiente para o seu projeto, basta clicar num botão na área de membros ou enviar um único e-mail para nosso canal de suporte. Devolveremos 100% do seu investimento, sem burocracia ou constrangimento."
+      answer: "Seu risco é zero. Ao se inscrever hoje, você recebe acesso completo por 1 ano a todas as aulas práticas, mega-prompts, geradores de roadmaps e apostilas mestre. Se em até 7 dias corridos você decidir que o conteúdo não é prático o suficiente para o seu projeto, basta clicar num botão na área de membros ou enviar um único e-mail para nosso canal de suporte. Devolveremos 100% do seu investimento, sem burocracia ou constrangimento."
     },
     {
       id: 4,
       question: "Quanto tempo eu preciso me dedicar para ver os primeiros resultados?",
-      answer: "Geralmente os alunos que se dedicam de 30 a 45 minutos diários conseguem concluir a orquestração inicial do seu primeiro e-book tripwire em menos de 72 horas. Os roteiros de canais dark para vídeos virais podem ser gerados e postados no mesmo dia, aplicando os moldes do Módulo 3."
+      answer: "Geralmente os leitores que se dedicam de 30 a 45 minutos diários conseguem concluir a orquestração inicial do seu primeiro e-book em menos de 72 horas. Os roteiros de canais dark para vídeos virais podem ser gerados e postados no mesmo dia, aplicando os moldes do Módulo 2."
     },
     {
       id: 5,
@@ -43,8 +43,8 @@ export default function FAQSection() {
         <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-600/10 text-orange-400 border border-orange-600/25 rounded-sm text-xs font-mono font-bold tracking-widest uppercase mb-3">
           <HelpCircle size={12} /> SUPORTE E DUVIDAS
         </span>
-        <h3 className="text-2xl md:text-4xl font-extrabold text-white tracking-tight uppercase">
-          Perguntas Frequentes Sobre o Método
+        <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight uppercase">
+          Perguntas Frequentes Sobre o E-book
         </h3>
         <p className="text-gray-400 text-xs md:text-sm mt-2 max-w-xl mx-auto font-sans font-light">
           Tem alguma dúvida residual? Separamos as principais respostas transparentes reunidas para lhe dar máxima convicção.

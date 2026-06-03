@@ -15,13 +15,17 @@ import {
   MessageCircle,
   Clock,
   HelpCircle,
-  FileCheck
+  FileCheck,
+  Zap,
+  Star,
+  Shield
 } from "lucide-react";
 
 // Components
 import CountdownTimer from "./components/CountdownTimer";
 import ModulesAccordion from "./components/ModulesAccordion";
 import FinanceSimulator from "./components/FinanceSimulator";
+import RoadmapGenerator from "./components/RoadmapGenerator";
 import PromptSandbox from "./components/PromptSandbox";
 import CertificateGenerator from "./components/CertificateGenerator";
 import ReviewsSection from "./components/ReviewsSection";
@@ -55,7 +59,7 @@ export default function App() {
              Vagas Premium
           </span>
           <span className="font-medium text-gray-400">
-            Preço Promocional com <strong className="text-white">70% de Desconto Vitalício</strong> expira hoje!
+            Preço Promocional com <strong className="text-white">70% de Desconto Especial</strong> expira hoje!
           </span>
           <button
             onClick={() => openCheckout(37.90)}
@@ -72,12 +76,12 @@ export default function App() {
           <div className="h-5 w-5 rounded-sm bg-orange-600 flex items-center justify-center shadow-md shadow-orange-600/20">
             <Sparkles size={11} className="text-white inline" />
           </div>
-          <span className="font-sans text-xs font-black tracking-tighter text-white">MÉTODO MULTI-IA</span>
+          <span className="font-sans text-xs font-black tracking-tighter text-white">E-BOOK MULTI-IA</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-[10px] text-gray-400 font-bold tracking-widest font-mono">
           <a href="#about" className="hover:text-orange-500 transition-colors uppercase">O PROBLEMA</a>
-          <a href="#simulator" className="hover:text-orange-500 transition-colors uppercase">SIMULADOR ROI</a>
+          <a href="#simulator" className="hover:text-orange-500 transition-colors uppercase">GERADOR DE ROADMAP</a>
           <a href="#curriculum" className="hover:text-orange-500 transition-colors uppercase">CONTEÚDO</a>
           <a href="#certificate-panel" className="hover:text-orange-500 transition-colors uppercase">CERTIFICADO</a>
         </nav>
@@ -161,7 +165,7 @@ export default function App() {
             </span>
             <span>•</span>
             <span className="flex items-center gap-1.5">
-              <Clock size={14} className="text-orange-500" /> Acesso Vitalício Sem Mensalidades
+              <Clock size={14} className="text-orange-500" /> Acesso por 1 Ano Completo
             </span>
           </div>
 
@@ -232,8 +236,8 @@ export default function App() {
             
             <div className="w-full text-center space-y-2 mt-4">
               <span className="text-[11px] font-mono text-orange-500 font-bold uppercase tracking-widest block">O Que Está Incluso Hoje:</span>
-              <p className="text-xs text-gray-300 font-light max-w-xs mx-auto text-center">
-                 Acesso imediato vitalício aos 5 Módulos, Mega-Prompts, Simulador de ROI e o Emissor de Certificado de Maestria.
+              <p className="text-xs text-gray-300 font-light max-w-xs mx-auto text-center font-sans">
+                 Acesso imediato por 1 Ano ao E-book Interativo contendo 4 Módulos Práticos, Mega-Prompts, Gerador de Roadmap e o Emissor de Certificado.
               </p>
             </div>
 
@@ -242,21 +246,15 @@ export default function App() {
         </div>
       </section>
 
-      {/* 5. BONUS INTERACTIVE DYNAMIC BLOCK 1: FINANCE SIMULATOR (Simulador de Viabilidade) */}
-      <section className="py-12 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
-        <div className="max-w-6xl mx-auto text-center px-4 mb-4">
-          <span className="text-xs font-mono uppercase bg-orange-600/10 border border-orange-600/20 text-orange-400 px-2.5 py-1 rounded-sm tracking-widest inline-block">
-             BÔNUS EXCLUSIVO INCLUSO HOJE
-          </span>
-          <h2 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight uppercase leading-none mt-3">
-            Ferramenta: Simulador Prático de Escala
-          </h2>
-          <p className="text-gray-400 text-xs md:text-sm max-w-lg mx-auto font-light mt-1.5">
-            Calcule exatamente quantos cliques, vendas e técnicas agregadas (Order Bump) você precisa para conquistar seus objetivos reais mensais.
-          </p>
-        </div>
+      {/* 5. BONUS INTERACTIVE DYNAMIC BLOCK 1: ROADMAP GENERATOR */}
+      <section className="py-6 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
+        {/* Dynamic Roadmap Generator Module */}
+        <RoadmapGenerator />
+      </section>
 
-        {/* Dynamic Simulator Module */}
+      {/* 5.5. BONUS INTERACTIVE DYNAMIC BLOCK 1.5: FINANCE SIMULATOR & DESAFIO */}
+      <section className="py-6 bg-[#050505]">
+        {/* Dynamic Simulator & Gamified Checklist Challenge Module */}
         <FinanceSimulator />
       </section>
 
@@ -307,32 +305,84 @@ export default function App() {
       </section>
 
       {/* 10. GUARANTEE CONFIDENCE BLOCK (7-Day Risk Free Guard) */}
-      <section className="py-16 max-w-4xl mx-auto px-4">
-        <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-sm relative overflow-hidden flex flex-col md:flex-row gap-8 items-center shadow-xl">
+      <section className="py-16 max-w-6xl mx-auto px-4 space-y-10">
+        <div className="text-center space-y-2">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight uppercase">
+            SUA COMPRA É <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">100% SEGURA</span>
+          </h2>
+          <p className="text-gray-400 text-xs md:text-sm font-sans font-light">
+            Transparência total. Sem pegadinhas, sem letras miúdas.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           
-          {/* Badge icon */}
-          <div className="relative shrink-0 flex items-center justify-center">
-            {/* Glowing circle background */}
-            <div className="absolute inset-0 bg-orange-600/10 blur-xl rounded-full scale-130 animate-pulse"></div>
-            
-            <div className="relative h-24 w-24 rounded-sm border border-white/15 bg-[#050505] flex flex-col items-center justify-center text-center">
-              <span className="text-3xl font-black text-orange-500 font-sans tracking-tighter leading-none">7D</span>
-              <span className="text-[10px] text-gray-400 uppercase font-mono tracking-wider font-semibold">DIAS</span>
-              <span className="text-[9px] text-gray-500 font-bold uppercase">Garantia</span>
+          {/* Card 1: Acesso Imediato */}
+          <div className="bg-[#0a0a0a] border border-white/5 p-8 rounded-2xl flex flex-col items-center justify-between text-center space-y-6">
+            <div className="space-y-4 flex flex-col items-center">
+              <div className="h-14 w-14 rounded-xl bg-orange-600/10 border border-orange-500/20 flex items-center justify-center text-orange-500">
+                <Zap size={24} className="fill-orange-500/20" />
+              </div>
+              <h4 className="text-base font-bold text-white uppercase tracking-wider">Acesso Imediato</h4>
+              <p className="text-gray-400 text-xs font-sans font-light leading-relaxed">
+                Após o pagamento, você recebe acesso instantâneo à plataforma completa de leitura e simulações.
+              </p>
+            </div>
+            <div className="inline-flex items-center gap-1 bg-orange-600/10 border border-orange-500/20 rounded-full px-4 py-1.5 text-[10px] font-mono text-orange-400 font-bold uppercase tracking-wider">
+              <Zap size={10} className="animate-pulse" /> Liberação Automática
             </div>
           </div>
 
-          {/* Copy description */}
-          <div className="space-y-4">
-            <span className="text-xs uppercase tracking-widest font-mono font-bold text-orange-500 block">RISCO FINANCEIRO ABSOLUTAMENTE ZERO</span>
+          {/* Card 2: 7 Dias de Garantia (Highlighted) */}
+          <div className="bg-[#110a05] border-2 border-orange-500/40 p-8 rounded-2xl flex flex-col items-center justify-between text-center relative overflow-hidden space-y-6 shadow-[0_0_35px_rgba(234,88,12,0.15)]">
+            {/* Glowing effect inside */}
+            <div className="absolute -top-10 -right-10 w-28 h-28 bg-orange-500/10 blur-2xl rounded-full"></div>
             
-            <h4 className="text-lg md:text-xl font-bold text-white tracking-tight uppercase">
-              Sua Satisfação Mestre ou Devolução de 100% do Capital
-            </h4>
+            <div className="space-y-4 flex flex-col items-center w-full">
+              {/* Graphic Layout from the image: "DIAS DE 7 GARANTIA" inline */}
+              <div className="flex items-center gap-2">
+                <div className="text-right flex flex-col leading-none font-mono text-[10px] text-gray-400 font-bold tracking-widest uppercase">
+                  <span>DIAS</span>
+                  <span>DE</span>
+                </div>
+                <span className="text-5xl font-black text-orange-500 font-sans tracking-tight leading-none">7</span>
+                <div className="text-left leading-none font-mono text-[10px] text-gray-400 font-bold tracking-widest uppercase">
+                  <span>GARANTIA</span>
+                </div>
+              </div>
+
+              {/* 5 stars */}
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={12} className="text-orange-500 fill-orange-500" />
+                ))}
+              </div>
+
+              <h4 className="text-base font-extrabold text-orange-400 uppercase tracking-wider">Garantia Incondicional</h4>
+              <p className="text-gray-300 text-xs font-sans font-normal leading-relaxed">
+                Se por qualquer motivo você sentir que o material não é para você, terá até 7 dias de garantia para solicitar o reembolso total do valor pago.
+              </p>
+            </div>
             
-            <p className="text-gray-400 text-xs md:text-sm leading-relaxed font-light font-sans">
-              Seu risco é ZERO. Inscreva-se hoje, assista às aulas, use os mega-prompts e teste o gerador estratégico. Se em até 7 dias você achar que o método não é para você, basta solicitar o reembolso na plataforma e devolveremos 100% do seu dinheiro, sem perguntas e sem qualquer tipo de burocracia ou intermediadores.
-            </p>
+            <div className="inline-flex items-center gap-1 bg-orange-500 text-white rounded-full px-5 py-1.5 text-[10px] font-mono font-black uppercase tracking-wider cursor-pointer shadow-[0_0_15px_rgba(234,88,12,0.3)]">
+              <ShieldCheck size={11} /> Risco Zero
+            </div>
+          </div>
+
+          {/* Card 3: Pagamento Seguro */}
+          <div className="bg-[#0a0a0a] border border-white/5 p-8 rounded-2xl flex flex-col items-center justify-between text-center space-y-6">
+            <div className="space-y-4 flex flex-col items-center">
+              <div className="h-14 w-14 rounded-xl bg-orange-600/10 border border-orange-500/20 flex items-center justify-center text-orange-500">
+                <Shield size={24} className="fill-orange-500/10" />
+              </div>
+              <h4 className="text-base font-bold text-white uppercase tracking-wider">Pagamento Seguro</h4>
+              <p className="text-gray-400 text-xs font-sans font-light leading-relaxed">
+                Processado pela Kiwify, plataforma líder em pagamentos digitais no Brasil, com segurança ponta a ponta.
+              </p>
+            </div>
+            <div className="inline-flex items-center gap-1 bg-orange-600/10 border border-orange-500/20 rounded-full px-4 py-1.5 text-[10px] font-mono text-orange-400 font-bold uppercase tracking-wider">
+              <ShieldCheck size={10} /> Ambiente Criptografado
+            </div>
           </div>
 
         </div>
@@ -348,7 +398,7 @@ export default function App() {
         <div className="max-w-3xl mx-auto px-4 text-center space-y-6">
           
           <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-500/10 text-orange-400 border border-orange-500/15 rounded-sm text-xs font-mono font-bold uppercase tracking-wider">
-            <Sparkles size={12} className="animate-pulse" /> SEU ACESSO É IMEDIATO E VITALÍCIO
+            <Sparkles size={12} className="animate-pulse" /> SEU ACESSO É IMEDIATO POR 1 ANO
           </span>
 
           <h2 className="text-3xl md:text-6xl font-extrabold text-white tracking-tight uppercase leading-none">
