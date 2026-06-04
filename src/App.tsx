@@ -179,18 +179,18 @@ export default function App() {
         {/* Right Side Showcase Graphic/Countdown Timer */}
         <div className="lg:col-span-5 space-y-6">
           
-          <div className="relative group rounded-sm overflow-hidden border border-white/10 shadow-[0_4px_30px_rgba(255,255,255,0.01)] transition-all duration-300">
-            {/* Visual Glass Header Card */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+          <div className="relative rounded-sm overflow-hidden border border-white/10 bg-gradient-to-b from-[#06060c] to-[#010103] p-6 flex flex-col items-center justify-between min-h-[300px] md:min-h-[340px] shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+            {/* Ambient subtle light blur */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 blur-3xl rounded-full pointer-events-none"></div>
             
             <img
-              src={heroWorkspaceImg}
-              alt="Workspace Orquestração Multi-IA"
+              src={bundleMockupImg}
+              alt="Ebook Desmistificando as IAs"
               referrerPolicy="no-referrer"
-              className="w-full h-56 md:h-64 object-cover transform scale-102 group-hover:scale-105 transition-transform duration-500"
+              className="h-44 md:h-52 w-auto object-contain my-auto"
             />
             
-            <div className="absolute bottom-4 left-4 z-20 space-y-1 bg-[#050505]/80 backdrop-blur-md rounded-sm p-3 border border-white/10">
+            <div className="w-full text-left space-y-1 bg-[#050505]/70 backdrop-blur-sm rounded-sm p-3.5 border border-white/5 mt-4">
               <span className="text-[10px] text-orange-500 uppercase font-mono font-bold tracking-widest block">AMBIENTE MESTRE</span>
               <p className="text-[11px] text-white font-medium">Orquestração complementar entre ChatGPT, Claude e Gemini</p>
             </div>
