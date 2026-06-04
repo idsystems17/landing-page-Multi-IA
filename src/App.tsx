@@ -35,18 +35,17 @@ import CheckoutModal from "./components/CheckoutModal";
 
 // Import generated assets (paths matched exactly)
 const heroWorkspaceImg = "/src/assets/images/multi_ia_workspace_1780427453674.png";
-const bundleMockupImg = "/src/assets/images/product_mockup_1780427468368.png";
+const bundleMockupImg = "/src/assets/images/product_mockup_1780603159120.png";
 
 export default function App() {
-  const [checkoutPrice, setCheckoutPrice] = useState<number>(37.90);
+  const [checkoutPrice, setCheckoutPrice] = useState<number>(98.00);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   
   // Legal Modals state
   const [activeLegalTab, setActiveLegalTab] = useState<"privacy" | "terms" | "disclaimer" | null>(null);
 
-  const openCheckout = (price: number) => {
-    setCheckoutPrice(price);
-    setIsCheckoutOpen(true);
+  const openCheckout = () => {
+    window.open("https://pay.kiwify.com.br/79zqIoV", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -59,14 +58,16 @@ export default function App() {
              Vagas Premium
           </span>
           <span className="font-medium text-gray-400">
-            Preço Promocional com <strong className="text-white">70% de Desconto Especial</strong> expira hoje!
+            Preço Promocional com <strong className="text-white">40% de Desconto Especial</strong> expira hoje!
           </span>
-          <button
-            onClick={() => openCheckout(37.90)}
+          <a
+            href="https://pay.kiwify.com.br/79zqIoV"
+            target="_blank"
+            rel="noopener noreferrer"
             className="cursor-pointer text-orange-500 hover:text-orange-400 font-bold inline-flex items-center gap-0.5 transition-colors pl-2"
           >
             Quero Economizar Agora <ChevronRight size={14} />
-          </button>
+          </a>
         </div>
       </div>
 
@@ -86,12 +87,14 @@ export default function App() {
           <a href="#certificate-panel" className="hover:text-orange-500 transition-colors uppercase">CERTIFICADO</a>
         </nav>
 
-        <button
-          onClick={() => openCheckout(37.90)}
-          className="cursor-pointer bg-[#050505] border border-white/10 hover:border-orange-500 text-orange-500 hover:text-white transition-all duration-300 rounded-sm py-1.5 px-4 font-mono text-[10px] tracking-wider font-bold"
+        <a
+          href="https://pay.kiwify.com.br/79zqIoV"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer bg-[#050505] border border-white/10 hover:border-orange-500 text-orange-500 hover:text-white transition-all duration-300 rounded-sm py-1.5 px-4 font-mono text-[10px] tracking-wider font-bold inline-block text-center"
         >
           GARANTIR VAGA
-        </button>
+        </a>
       </header>
 
       {/* 3. CORE PERSUASIVE HERO SECTION */}
@@ -150,13 +153,15 @@ export default function App() {
 
           {/* Core Call-to-Action widget block */}
           <div className="flex flex-col sm:flex-row gap-4 items-center max-w-sm pt-2">
-            <button
-               onClick={() => openCheckout(37.90)}
-               className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black py-4 px-6 rounded-sm transition-all duration-300 font-sans text-xs md:text-sm uppercase tracking-tighter flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.3)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group transform hover:-translate-y-0.5"
+            <a
+               href="https://pay.kiwify.com.br/79zqIoV"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black py-4 px-6 rounded-sm transition-all duration-300 font-sans text-xs md:text-sm uppercase tracking-tighter flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.3)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group transform hover:-translate-y-0.5 text-center"
             >
                QUERO DOMINAR O MERCADO AGORA
                <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
 
           <div className="flex items-center gap-4 text-[10px] md:text-xs font-mono text-gray-500 flex-wrap">
@@ -413,24 +418,33 @@ export default function App() {
           <div className="bg-[#0a0a0a] border-2 border-orange-600/40 rounded-sm p-6 md:p-8 max-w-md mx-auto space-y-5 shadow-[0_0_35px_rgba(234,88,12,0.15)] relative overflow-hidden">
             
             <div className="absolute top-0 right-0 py-1 px-3 bg-red-600 text-white font-black font-mono text-[9px] uppercase tracking-wider">
-              70% OFF HOJE
+              40% OFF HOJE
             </div>
 
             <div className="space-y-1">
-              <span className="text-xs text-gray-500 font-medium line-through font-mono uppercase">De R$ 197,00 por apenas:</span>
-              <div className="flex items-center justify-center gap-1.5">
-                <span className="text-sm font-bold text-gray-400 font-sans">R$</span>
-                <span className="text-4xl md:text-6xl font-black text-white font-sans tracking-tighter leading-none">37,90</span>
+              <span className="text-xs text-orange-500 font-bold font-mono uppercase tracking-wider block">PREÇO PROMOCIONAL POR TEMPO LIMITADO</span>
+              <div className="text-xs text-gray-500 font-medium line-through font-mono uppercase">De R$ 163,34 por apenas:</div>
+              <div className="py-2">
+                <span className="text-xs uppercase font-mono tracking-wider font-semibold text-gray-400">12x de</span>
+                <div className="flex items-center justify-center gap-1.5 leading-none">
+                  <span className="text-sm font-bold text-orange-500 font-sans">R$</span>
+                  <span className="text-4xl md:text-6xl font-black text-white font-sans tracking-tighter leading-none">10,14</span>
+                </div>
+                <div className="text-xs text-gray-400 uppercase tracking-wider font-bold font-mono mt-1 pt-1.5 border-t border-white/5 inline-block">
+                  ou <span className="text-emerald-400">R$ 98,00</span> à vista no PIX/Cartão
+                </div>
               </div>
-              <span className="text-[10px] text-gray-400 font-mono block">Pago uma única vez • Sem mensalidades adicionais</span>
+              <span className="text-[10px] text-gray-500 font-mono block">Sem assinaturas ou taxas ocultas • Acesso imediato</span>
             </div>
 
-            <button
-               onClick={() => openCheckout(37.90)}
-               className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black text-xs md:text-sm py-4 rounded-sm transition-all duration-300 shadow-[0_4px_20px_rgba(234,88,12,0.3)] hover:shadow-[0_0_25px_rgba(234,88,12,0.5)] uppercase tracking-tighter"
+            <a
+               href="https://pay.kiwify.com.br/79zqIoV"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black text-xs md:text-sm py-4 rounded-sm transition-all duration-300 shadow-[0_4px_20px_rgba(234,88,12,0.3)] hover:shadow-[0_0_25px_rgba(234,88,12,0.5)] uppercase tracking-tighter text-center inline-block"
             >
                QUERO GARANTIR MINHA INSCRIÇÃO AGORA
-            </button>
+            </a>
 
             {/* List of security checks beneath pricing card */}
             <div className="flex items-center justify-center gap-4 text-[10px] font-mono text-gray-500 pt-1 border-t border-white/5">
@@ -481,9 +495,8 @@ export default function App() {
             <div className="space-y-2">
               <div className="text-gray-400 font-bold uppercase font-mono text-[10px]">Identificação Corporativa</div>
               <p>
-                 Método Multi-IA Ltda • Escola de Capacitação em Inteligência Artificial para Produtores Digitais.
-                <br />CNPJ nacional de referência: 45.182.903/0001-99 • São Paulo / SP.
-                <br />Atendimento por e-mail: <strong className="text-gray-400 font-bold select-all">suporte@multiia.com</strong>
+                 Este ebook interativo foi Desenvolvido por IDSystems.
+                <br />Atendimento por e-mail: <strong className="text-gray-400 font-bold select-all">idsystems17@gmail.com</strong>
               </p>
             </div>
             
@@ -497,7 +510,7 @@ export default function App() {
 
           {/* Compliance statement text footer */}
           <div className="p-4 bg-[#0a0a0a] border border-white/5 text-center rounded-sm font-light text-gray-500 leading-normal">
-            Os resultados práticos do Método variam de pessoa para pessoa, dependendo inteiramente da dedicação mestre, nível de aplicação prática das orquestrações e testes de campanha executados por cada aluno de forma diante. Não há garantia implícita de lucro garantido sem aplicação.
+            Os resultados práticos apresentados no conteúdo variam de pessoa para pessoa, dependendo inteiramente da dedicação mestre, nível de aplicação prática das orquestrações e testes de campanha executados por cada aluno de forma diante. Não há garantia implícita de lucro garantido sem aplicação.
           </div>
 
         </div>

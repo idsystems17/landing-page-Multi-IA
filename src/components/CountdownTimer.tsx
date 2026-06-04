@@ -48,7 +48,7 @@ export default function CountdownTimer() {
   return (
     <div className="flex flex-col items-center justify-center bg-[#0a0a0a] backdrop-blur-md rounded-sm border border-orange-500/30 p-6 md:p-8 max-w-md mx-auto text-center shadow-[0_0_30px_rgba(234,88,12,0.15)]">
       <div className="text-xs uppercase tracking-widest text-orange-500 font-mono font-bold mb-2">
-         Apenas Hoje • Oferta Exclusiva com 70% OFF
+         Apenas Hoje • Oferta Exclusiva com 40% OFF
       </div>
       <div className="text-sm font-medium text-gray-300 mb-4 uppercase">
         As inscrições encerram e o preço original retorna em:
