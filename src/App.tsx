@@ -34,7 +34,7 @@ import LegalModals from "./components/LegalModals";
 import CheckoutModal from "./components/CheckoutModal";
 
 // Import generated assets (paths matched exactly)
-const heroWorkspaceImg = "/src/assets/images/multi_ia_workspace_1780427453674.png";
+const heroWorkspaceImg = "/src/assets/images/workspace_modern_1780603575092.png";
 const bundleMockupImg = "/src/assets/images/product_mockup_1780603159120.png";
 
 export default function App() {
