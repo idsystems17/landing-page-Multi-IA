@@ -332,6 +332,51 @@ export default function App() {
         <ModulesAccordion />
       </section>
 
+      {/* 7.5. HIGH CONVERSION BOT-OF-THE-FUNNEL (FUNDO DE FUNIL) BANNER */}
+      <section className="py-6 max-w-6xl mx-auto px-4">
+        <div className="bg-gradient-to-r from-orange-950/40 via-[#0a0a14] to-black border-2 border-orange-500/30 rounded-xl p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(234,88,12,0.1)] relative overflow-hidden">
+          {/* Decorative light trails */}
+          <div className="absolute top-0 right-0 w-48 h-48 bg-orange-600/5 blur-3xl pointer-events-none rounded-full"></div>
+          
+          <div className="space-y-3 max-w-xl text-center lg:text-left">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded font-mono text-[10px] font-bold uppercase tracking-widest leading-none mx-auto lg:mx-0 w-fit">
+              <Zap size={10} className="text-orange-500 animate-pulse" /> OFERTA ESPECIAL DE MATRÍCULA
+            </div>
+            <h3 className="text-xl md:text-3xl font-black text-white tracking-tight uppercase leading-tight leading-none">
+              Diga Adeus às Mensalidades das IAs <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 italic">Hoje</span>
+            </h3>
+            <p className="text-gray-400 text-xs md:text-sm font-light leading-relaxed font-sans">
+              Garanta acesso a todo o material do e-book por apenas uma parcela única de <strong className="text-white whitespace-nowrap">R$ 98,00</strong>. Orquestre ChatGPT, Claude e Gemini gratuitos e potencialize suas vendas em tempo recorde!
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto shrink-0 bg-black/40 p-4 border border-white/5 rounded-xl">
+            <div className="text-center sm:text-right leading-tight pr-0 sm:pr-4 sm:border-r border-white/10 shrink-0 whitespace-nowrap">
+              <span className="text-[9px] uppercase font-mono text-gray-500 block font-semibold">Valor Especial à Vista</span>
+              <span className="text-sm font-bold text-gray-400 font-mono line-through block">De R$ 163,34 por</span>
+              <span className="text-2xl md:text-3xl font-black text-emerald-400 font-mono block whitespace-nowrap">R$ 98,00</span>
+              <span className="text-xs md:text-sm font-extrabold text-orange-400 block font-mono mt-1">
+                ou 12x de R$ 10,14
+              </span>
+            </div>
+            
+            <div className="w-full sm:w-auto">
+              <a
+                href="https://pay.kiwify.com.br/79zqIoV"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-black text-xs py-3.5 px-6 rounded transition-all duration-300 shadow-[0_0_20px_rgba(234,88,12,0.25)] hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] uppercase tracking-wider text-center inline-block whitespace-nowrap min-h-[44px]"
+              >
+                APROVEITAR AGORA
+              </a>
+              <div className="flex items-center justify-center gap-1 text-[8px] font-mono text-gray-600 mt-2">
+                <ShieldCheck size={10} className="text-orange-500" /> Acesso de 1 Ano • Garantia Premium
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 8. BONUS INTERACTIVE DYNAMIC BLOCK 3: CERTIFICADO DE CONCLUSÃO PRÁTICO (With active Quiz!) */}
       <section id="certificate" className="py-12 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
         <div className="max-w-6xl mx-auto text-center px-4 mb-4">
