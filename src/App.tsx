@@ -227,22 +227,68 @@ export default function App() {
             </p>
           </div>
 
-          {/* Interactive display showing bundle cover cover with interactive highlights */}
-          <div className="bg-white/5 border border-white/10 rounded-sm p-6 relative overflow-hidden flex flex-col items-center">
+          {/* Interactive display showing bundle details card */}
+          <div className="bg-white/5 border border-white/10 rounded-sm p-6 md:p-8 relative overflow-hidden flex flex-col justify-between w-full h-full min-h-[350px]">
             
-            <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500/5 blur-2xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 blur-3xl rounded-full pointer-events-none"></div>
             
-            <img
-              src={bundleMockupImg}
-              alt="Mockup do Método Multi-IA Bundle"
-              referrerPolicy="no-referrer"
-              className="w-full max-w-xs object-contain transform hover:rotate-1 hover:scale-102 transition-transform duration-300"
-            />
+            <div className="space-y-6">
+              <div className="text-left space-y-1">
+                <span className="text-[10px] font-mono text-orange-500 font-bold uppercase tracking-widest block">CONTEÚDO DO E-BOOK</span>
+                <h4 className="text-xl font-extrabold text-white uppercase tracking-tight">MÉTODO MULTI-IA</h4>
+                <p className="text-xs text-gray-400 font-light font-sans">
+                  Tudo o que você precisa para dominar a inteligência artificial sem gastar com mensalidades caras.
+                </p>
+              </div>
+
+              {/* High precision aesthetic item features instead of image */}
+              <div className="space-y-3.5 text-left pt-2">
+                <div className="flex gap-3 items-center">
+                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                    <BookOpen size={14} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-white block uppercase tracking-wide">E-book Interativo Completo</span>
+                    <span className="text-[10px] text-gray-400 font-sans">Leitura dinâmica com links úteis e guias</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                    <Terminal size={14} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-white block uppercase tracking-wide">Arsenal de Mega-Prompts Mestre</span>
+                    <span className="text-[10px] text-gray-400 font-sans">Instruções prontas para ChatGPT, Claude e Gemini</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                    <TrendingUp size={14} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-white block uppercase tracking-wide">Simulador Inteligente Integrado</span>
+                    <span className="text-[10px] text-gray-400 font-sans">Roteiro estratégico adaptável ao seu projeto</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
+                    <FileCheck size={14} />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold text-white block uppercase tracking-wide">Emissor de Certificado de Maestria</span>
+                    <span className="text-[10px] text-gray-400 font-sans">Valide seu conhecimento prático após o quiz</span>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-            <div className="w-full text-center space-y-2 mt-4">
-              <span className="text-[11px] font-mono text-orange-500 font-bold uppercase tracking-widest block">O Que Está Incluso Hoje:</span>
-              <p className="text-xs text-gray-300 font-light max-w-xs mx-auto text-center font-sans">
-                 Acesso imediato por 1 Ano ao E-book Interativo contendo 4 Módulos Práticos, Mega-Prompts, Gerador de Roadmap e o Emissor de Certificado.
+            <div className="w-full text-center space-y-2 mt-6 pt-4 border-t border-white/5">
+              <span className="text-[11px] font-mono text-orange-500 font-bold uppercase tracking-widest block">ACESSO IMEDIATO POR 1 ANO</span>
+              <p className="text-xs text-gray-400 font-light max-w-sm mx-auto text-center font-sans">
+                Garantido sem custos extras. Aproveite todas as atualizações futuras sem nenhum centavo de mensalidade.
               </p>
             </div>
 
