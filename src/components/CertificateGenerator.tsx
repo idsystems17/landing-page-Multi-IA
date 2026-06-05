@@ -19,15 +19,15 @@ export default function CertificateGenerator() {
   const questions: Question[] = [
     {
       id: 1,
-      text: "Qual Inteligência Artificial gratuita do grupo é melhor configurada para validar pesquisas acadêmicas e localizar fontes de dados legítimas para livros ou e-books?",
+      text: "Qual modalidade de Inteligência Artificial gratuita é melhor configurada para validar pesquisas acadêmicas e localizar fontes de dados legítimas em tempo real para livros ou e-books?",
       options: [
-        "ChatGPT",
-        "Claude.ai",
-        "Google Gemini (com acesso em tempo real à busca do Google)",
-        "Leonardo.ai"
+        "IA Conversacional Padrão",
+        "IA Conversacional Criativa",
+        "IA com conexão nativa ao Buscador",
+        "IA de desenho estendido"
       ],
       correctAnswer: 2,
-      explanation: "O Google Gemini possui conexão nativa e automática com o buscador do Google, garantindo verificação factual, datas precisas e rastreabilidade científica muito superior aos modelos offline padrões."
+      explanation: "Modelos de Inteligência Artificial com conexão nativa e automática com buscadores garantem a melhor verificação factual, datas precisas e rastreabilidade científica."
     },
     {
       id: 2,
@@ -36,10 +36,10 @@ export default function CertificateGenerator() {
         "Contratar assinaturas caras em todas as plataformas Plus e Pro disponíveis para garantir acesso rápido.",
         "Desenvolver prompts monolíticos gigantes contendo todo o roteiro em um único envio de texto.",
         "Fazer diferentes Inteligências Artificiais gratuitas trabalharem em cadeia complementar, onde uma revisa e eleva o rascunho da outra.",
-        "Usar robôs do CapCut para postar vídeos virais duplicados sem edição manual."
+        "Usar robôs de automação duplicadas para postar sem edição manual."
       ],
       correctAnswer: 2,
-      explanation: "A orquestração tira proveito das virtudes de cada IA gratuita (títulos no ChatGPT, fontes científicas no Gemini, textura humana no Claude) encadeadas de forma inteligente."
+      explanation: "A orquestração tira proveito das virtudes de cada IA gratuita (títulos na IA de títulos, fontes científicas na IA de busca, textura humana na IA de escrita) encadeadas de forma inteligente."
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ export default function CertificateGenerator() {
       options: [
         "Um banimento unilateral no Google Ads por falta de páginas de políticas.",
         "Um produto complementar de valor acessível oferecido no checkout com caixa de marcação simples, elevando o faturamento sem elevar o Custo por Clique.",
-        "Uma técnica para acelerar a renderização de vídeos usando o CapCut.",
+        "Uma técnica de edição rápida para vídeos de canais dark corporativos.",
         "A garantia incondicional de reembolso por 7 dias."
       ],
       correctAnswer: 1,
@@ -264,7 +264,7 @@ export default function CertificateGenerator() {
               </div>
 
               <p className="text-[11px] md:text-xs text-gray-600 max-w-lg mx-auto leading-relaxed font-sans font-light mb-4 md:mb-6">
-                concluiu com êxito todas as etapas teórico-práticas, simulações de anúncios estruturados e orquestrações de fluxo de trabalho do <strong className="font-semibold text-gray-900">Método Multi-IA</strong>, dominando as integrações funcionais do ChatGPT, Claude.ai, Google Gemini e geração cinematográfica de Leonardo.ai.
+                concluiu com êxito todas as etapas teórico-práticas, simulações de anúncios estruturados e orquestrações de fluxo de trabalho do <strong className="font-semibold text-gray-900">Método Multi-IA</strong>, dominando as integrações funcionais, recursos analíticos e metodologias avançadas de orquestração de Inteligência Artificial de sua preferência.
               </p>
 
               {/* Stamp and signatures board */}

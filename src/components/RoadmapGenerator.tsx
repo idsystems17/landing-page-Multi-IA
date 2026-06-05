@@ -13,7 +13,7 @@ export default function RoadmapGenerator() {
   };
 
   const getEbookDescription = () => {
-    return `Um plano de ação altamente estratégico para criar, embalar e lançar um ebook compacto focado em vendas na internet em tempo recorde. O método de orquestração consiste em dividir o fluxo de produção de conteúdo entre 4 Inteligências Artificiais gratuitas e especializadas, aproveitando o que há de melhor em cada modelo: usar o ChatGPT para mapear as dores e a estrutura, o Claude.ai para redação de altíssima profundidade que soa humana, o Leonardo.ai para fazer a capa e os criativos em alta fidelidade técnica e o Google Gemini para gerar a página de checkout de alta conversão. Ideal para seu nível de dedicação de 2h diárias com perfil de experiência Iniciante.`;
+    return `Um plano de ação altamente estratégico para criar, embalar e lançar um ebook compacto focado em vendas na internet em tempo recorde. O método de orquestração consiste em dividir o fluxo de produção de conteúdo entre Inteligências Artificiais gratuitas e especializadas, aproveitando o que há de melhor em cada modelo: usar a IA conversacional para mapear as dores e a estrutura, a IA de redação para modelagem de copy com altíssima qualidade e tom humano, as ferramentas de arte digital para gerar capas em alta fidelidade estética e o seu modelo de pesquisa preferencial para validar fatos históricos relevantes. Ideal para seu nível de dedicação de 2h diárias com perfil de experiência Iniciante.`;
   };
 
   return (
@@ -156,7 +156,7 @@ export default function RoadmapGenerator() {
                 </span>
                 
                 <div className="flex flex-wrap gap-2">
-                  {["ChatGPT (Gratuito)", "Claude.ai (Gratuito)", "Leonardo.ai (Gratuito)", "Gemini (Gratuito)"].map((aiName) => (
+                  {["IA de Copywriting (Grátis)", "IA de Redação (Grátis)", "IA de Arte Estética (Grátis)", "IA de Pesquisa Factual (Grátis)"].map((aiName) => (
                     <span
                       key={aiName}
                       className="bg-[#0c0c1b] border border-white/5 rounded-full px-3.5 py-1 text-[10px] font-mono text-gray-400 leading-none flex items-center gap-1.5"

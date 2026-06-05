@@ -9,7 +9,7 @@ export default function ReviewsSection() {
       role: "Coproductor & Infoprodutor de Finanças",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80",
       rating: 5,
-      comment: "Eu estava gastando quase R$ 250 por mês somando as assinaturas premium do ChatGPT Plus e Claude Pro. Aprendi no Método a orquestrar as ferramentas gratuitas integradas pelo Google Gemini. Em menos de 4 dias lancei meu primeiro eBook tripwire estruturado cientificamente. Vendi 12 cópias logo na primeira campanha de anúncios!",
+      comment: "Eu estava gastando quase R$ 250 por mês somando as assinaturas premium de ferramentas pagas de conversação. Aprendi no Método a orquestrar as ferramentas gratuitas integradas com Inteligências Artificiais de busca livre. Em menos de 4 dias lancei meu primeiro eBook tripwire estruturado cientificamente. Vendi 12 cópias logo na primeira campanha de anúncios!",
       date: "Há 3 dias"
     },
     {
@@ -27,7 +27,7 @@ export default function ReviewsSection() {
       role: "Afiliado Autoridade & Canal Dark",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80",
       rating: 5,
-      comment: "Sou tímido e não queria aparecer de jeito nenhum. A metodologia de canais dark usando Leonardo.ai avançado para obter fotos fotorrealistas de estúdio e vozes articuladas em português salvou meu projeto. Coloquei vídeos de retenção alta no Instagram e TikTok e ultrapassei 25 mil views em 7 dias com o Método Multi-IA.",
+      comment: "Sou tímido e não queria aparecer de jeito nenhum. A metodologia de canais dark usando ferramentas de imagem avançadas e gratuitas para obter fotos fotorrealistas de estúdio e vozes articuladas em português salvou meu projeto. Coloquei vídeos de retenção alta no Instagram e TikTok e ultrapassei 25 mil views em 7 dias com o Método Multi-IA.",
       date: "Há 2 dias"
     }
   ];

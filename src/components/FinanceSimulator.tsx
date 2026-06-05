@@ -12,7 +12,7 @@ export default function FinanceSimulator() {
     { id: 2, text: "Escolher e configurar 2 IAs gratuitas complementares", completed: true },
     { id: 3, text: "Gerar um Roadmap Personalizado usando o gerador de roadmap", completed: true },
     { id: 4, text: "Criar uma conta gratuita na Kiwify ou Hotmart", completed: false },
-    { id: 5, text: "Gerar um mega-prompt de vendas da aula de E-books e rodar no Claude.ai", completed: false },
+    { id: 5, text: "Gerar um mega-prompt de vendas da aula de E-books e rodar na IA de redação de sua preferência", completed: false },
     { id: 6, text: "Criar criativo estético no Canva em menos de 10 minutos", completed: false },
     { id: 7, text: "Publicar seu link de afiliado ou infoproduto nas redes e acompanhar métricas", completed: false }
   ];
@@ -138,7 +138,7 @@ export default function FinanceSimulator() {
               />
               <div className="flex justify-between text-[9px] text-gray-500 font-mono uppercase tracking-tight leading-normal">
                 <span>0.5% (E-book básico)</span>
-                <span>1.5% (Médio com VSL de roteiro Claude)</span>
+                <span>1.5% (Médio com VSL de roteiro gerado por IA)</span>
                 <span>5.0% (Alto Tráfego Orgânico quente)</span>
               </div>
             </div>

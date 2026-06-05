@@ -112,8 +112,8 @@ export default function App() {
           </h1>
 
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed max-w-xl">
-            Se você acha que precisa gastar centenas de reais por mês com assinaturas do <strong>ChatGPT Plus, Claude Pro ou geradores de arte caros</strong> para ter resultados reais com Inteligência Artificial, você foi enganado. 
-            O verdadeiro segredo mestre do mercado digital não é usar UMA ferramenta cara, mas saber <strong className="text-white italic">orquestrar múltiplas Inteligências Artificiais gratuitas</strong> de forma complementar e automatizada para você!
+            Se você acha que precisa gastar centenas de reais por mês com assinaturas de <strong>ferramentas conversacionais caras ou geradores de arte premium</strong> para ter resultados reais com Inteligência Artificial, você foi enganado. 
+            O verdadeiro segredo mestre do mercado digital não é usar UMA ferramenta cara de forma repetitiva, mas saber <strong className="text-white italic">orquestrar múltiplas Inteligências Artificiais gratuitas de sua preferência</strong> de forma complementar e automatizada para você!
           </p>
 
           <div className="grid grid-cols-3 gap-3">
@@ -192,7 +192,7 @@ export default function App() {
             
             <div className="w-full text-left space-y-1 bg-[#050505]/70 backdrop-blur-sm rounded-sm p-3.5 border border-white/5 mt-4">
               <span className="text-[10px] text-orange-500 uppercase font-mono font-bold tracking-widest block">AMBIENTE MESTRE</span>
-              <p className="text-[11px] text-white font-medium">Orquestração complementar entre ChatGPT, Claude e Gemini</p>
+              <p className="text-[11px] text-white font-medium">Orquestração complementar entre as Inteligências Artificiais de sua preferência</p>
             </div>
           </div>
 
@@ -215,7 +215,7 @@ export default function App() {
             </h3>
             
             <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
-              O modelo de mentores saturados é sempre o mesmo: eles tentam te vender que você necessita de R$ 110,00 mensais no ChatGPT Plus, mais R$ 110,00 no Claude Pro, e mais centenas de reais em geradores de áudio e vídeo com IA para começar a faturar.
+              O modelo de mentores saturados é sempre o mesmo: eles tentam te vender que você necessita de centenas de reais em assinaturas mensais de ferramentas de chat premium ou geradores de áudio e vídeo pagos com IA para começar a faturar.
             </p>
 
             <blockquote className="border-l-4 border-orange-500 pl-4 py-1.5 italic text-xs md:text-sm text-gray-300 bg-white/5 rounded-r-sm">
@@ -259,7 +259,7 @@ export default function App() {
                   </div>
                   <div>
                     <span className="text-xs font-bold text-white block uppercase tracking-wide">Arsenal de Mega-Prompts Mestre</span>
-                    <span className="text-[10px] text-gray-400 font-sans">Instruções prontas para ChatGPT, Claude e Gemini</span>
+                    <span className="text-[10px] text-gray-400 font-sans">Instruções prontas para Inteligências Artificiais de sua preferência</span>
                   </div>
                 </div>
 
@@ -346,7 +346,7 @@ export default function App() {
               Diga Adeus às Mensalidades das IAs <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 italic">Hoje</span>
             </h3>
             <p className="text-gray-400 text-xs md:text-sm font-light leading-relaxed font-sans">
-              Garanta acesso a todo o material do e-book por apenas uma parcela única de <strong className="text-white whitespace-nowrap">R$ 98,00</strong>. Orquestre ChatGPT, Claude e Gemini gratuitos e potencialize suas vendas em tempo recorde!
+              Garanta acesso a todo o material do e-book por apenas uma parcela única de <strong className="text-white whitespace-nowrap">R$ 98,00</strong>. Orquestre as Inteligências Artificiais gratuitas de sua preferência e potencialize suas vendas em tempo recorde!
             </p>
           </div>
 

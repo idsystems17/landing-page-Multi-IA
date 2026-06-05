@@ -31,21 +31,21 @@ export default function PromptSandbox() {
     {
       id: "chatgpt_hooks",
       title: "Ganchos Emocionais & Títulos Psicológicos",
-      provider: "Otimizado para ChatGPT",
+      provider: "Otimizado para IA de Copywriting",
       icon: MessageSquareQuote,
       color: "from-emerald-600/20 to-green-500/10 text-emerald-400 border-emerald-500/20",
     },
     {
       id: "gemini_science",
       title: "Validação Científica de Teses & Fontes Reais",
-      provider: "Otimizado para Google Gemini",
+      provider: "Otimizado para IA de Busca e Análise",
       icon: Brain,
       color: "from-blue-600/20 to-sky-500/10 text-sky-400 border-sky-500/20",
     },
     {
       id: "claude_humanizer",
       title: "Humanização de Copy & Textura de Linguagem",
-      provider: "Otimizado para Claude.ai",
+      provider: "Otimizado para IA de Humanização",
       icon: Cpu,
       color: "from-purple-600/20 to-violet-500/10 text-purple-400 border-purple-500/20",
     }
