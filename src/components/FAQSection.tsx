@@ -9,7 +9,7 @@ export default function FAQSection() {
     {
       id: 1,
       question: "Eu realmente não vou precisar pagar nenhuma assinatura de Inteligência Artificial?",
-      answer: "Exatamente. Todo o pilar lógico do E-book Multi-IA baseia-se na orquestração complementar de ferramentas gratuitas. Você vai aprender a usar as versões gratuitas das principais Inteligências Artificiais em sinergia, obtendo resultados superiores aos de quem simplesmente copia e cola prompts genéricos em uma única ferramenta premium. Os melhores geradores de imagem e editores de vídeo inteligentes do mercado também serão utilizados em seus planos gratuitos."
+      answer: "Exatamente. Todo o pilar lógico do E-book Método Multi-IA baseia-se na orquestração complementar de ferramentas gratuitas. Você vai aprender a usar as versões gratuitas das principais Inteligências Artificiais em sinergia, obtendo resultados superiores aos de quem simplesmente copia e cola prompts genéricos em uma única ferramenta premium. Os melhores geradores de imagem e editores de vídeo inteligentes do mercado também serão utilizados em seus planos gratuitos."
     },
     {
       id: 2,

@@ -77,7 +77,7 @@ export default function App() {
           <div className="h-5 w-5 rounded-sm bg-orange-600 flex items-center justify-center shadow-md shadow-orange-600/20">
             <Sparkles size={11} className="text-white inline" />
           </div>
-          <span className="font-sans text-xs font-black tracking-tighter text-white">E-BOOK MULTI-IA</span>
+          <span className="font-sans text-xs font-black tracking-tighter text-white">E-BOOK MÉTODO MULTI-IA</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-[10px] text-gray-400 font-bold tracking-widest font-mono">
