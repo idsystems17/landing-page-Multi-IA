@@ -32,7 +32,7 @@ export default function RoadmapGenerator() {
             Gerador de Roadmap Multi-IA
           </h3>
           <p className="text-gray-400 text-xs md:text-sm font-sans font-light leading-relaxed max-w-2xl">
-            Amostra estática do planejador inteligente. Adquira o e-book interativo para ter acesso à ferramenta real que gera cronogramas customizados, estruturas passo a passo e orquestrações de IA personalizadas para o seu nicho.
+            Amostra estática do planejador inteligente. Informe seu nicho e receba um roadmap personalizado dizendo qual IA gratuita usar em cada etapa — ChatGPT, Gemini, Claude ou Leonardo.AI — com os prompts prontos para cada uma.
           </p>
         </div>
 
@@ -156,7 +156,12 @@ export default function RoadmapGenerator() {
                 </span>
                 
                 <div className="flex flex-wrap gap-2">
-                  {["IA de Copywriting (Grátis)", "IA de Redação (Grátis)", "IA de Arte Estética (Grátis)", "IA de Pesquisa Factual (Grátis)"].map((aiName) => (
+                  {[
+                    "IA de Copywriting (Grátis • ChatGPT 4o gratuito)",
+                    "IA de Redação (Grátis • Claude gratuito)",
+                    "IA de Arte Estética (Grátis • Leonardo.AI gratuito)",
+                    "IA de Pesquisa Factual (Grátis • Gemini gratuito / Perplexity gratuito)"
+                  ].map((aiName) => (
                     <span
                       key={aiName}
                       className="bg-[#0c0c1b] border border-white/5 rounded-full px-3.5 py-1 text-[10px] font-mono text-gray-400 leading-none flex items-center gap-1.5"

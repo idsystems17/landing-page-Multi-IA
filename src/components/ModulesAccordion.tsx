@@ -7,7 +7,7 @@ export default function ModulesAccordion() {
       id: 1,
       number: "01",
       title: "Fundamentos Multi-IA",
-      subtitle: "O Segredo da Orquestração: Por Que Uma IA Só Não Basta. Aprenda a criar um funil de IAs gratuitas para automatizar tarefas lógicas.",
+      subtitle: "Por que usar só o ChatGPT não basta — e como combinar ChatGPT, Gemini, Claude e Leonardo.AI gratuitamente para produzir 10x mais rápido.",
       icon: Layers,
       color: "from-orange-600/20 to-red-500/10",
       accent: "text-orange-400",

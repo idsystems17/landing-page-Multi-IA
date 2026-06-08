@@ -108,12 +108,11 @@ export default function App() {
           </div>
 
           <h1 className="text-4xl md:text-7xl font-black text-white leading-[0.85] tracking-tight uppercase">
-            DOMINE A <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 italic">NOVA ERA</span> DOS INFOPRODUTOS
+            DOMINE O CHATGPT, GEMINI E CLAUDE — <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 italic">SEM PAGAR</span> MENSALIDADE NENHUMA
           </h1>
 
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed max-w-xl">
-            Se você acha que precisa gastar centenas de reais por mês com assinaturas de <strong>ferramentas conversacionais caras ou geradores de arte premium</strong> para ter resultados reais com Inteligência Artificial, você foi enganado. 
-            O verdadeiro segredo mestre do mercado digital não é usar UMA ferramenta cara de forma repetitiva, mas saber <strong className="text-white italic">orquestrar múltiplas Inteligências Artificiais gratuitas de sua preferência</strong> de forma complementar e automatizada para você!
+            Se você acha que precisa pagar <strong>R$97/mês no ChatGPT Plus, R$104 no Claude Pro e R$97 no Gemini Advanced</strong> para ter resultados reais — você foi enganado. O verdadeiro segredo é saber usar as versões gratuitas do <strong className="text-white italic">ChatGPT, Gemini, Claude e Leonardo.AI trabalhando juntos</strong>.
           </p>
 
           <div className="grid grid-cols-3 gap-3">
@@ -137,7 +136,7 @@ export default function App() {
                 <BookmarkCheck size={14} />
               </div>
               <p className="text-xs md:text-sm text-gray-300 font-light">
-                <strong>Orquestração Lógica:</strong> Aprenda a fazer as melhores IAs gratuitas do mundo conversarem e refinarem o trabalho de forma autônoma.
+                <strong>Orquestração Lógica:</strong> Aprenda a usar ChatGPT para raciocinar, Gemini para pesquisar, Claude para escrever e Leonardo.AI para criar imagens — tudo grátis, tudo junto, tudo no seu ritmo.
               </p>
             </div>
             
@@ -192,7 +191,7 @@ export default function App() {
             
             <div className="w-full text-left space-y-1 bg-[#050505]/70 backdrop-blur-sm rounded-sm p-3.5 border border-white/5 mt-4">
               <span className="text-[10px] text-orange-500 uppercase font-mono font-bold tracking-widest block">AMBIENTE MESTRE</span>
-              <p className="text-[11px] text-white font-medium">Orquestração complementar entre as Inteligências Artificiais de sua preferência</p>
+              <p className="text-[11px] text-white font-medium">Como fazer ChatGPT, Gemini, Claude e Leonardo.AI trabalharem juntos para você — sem pagar nada</p>
             </div>
           </div>
 
@@ -215,7 +214,7 @@ export default function App() {
             </h3>
             
             <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
-              O modelo de mentores saturados é sempre o mesmo: eles tentam te vender que você necessita de centenas de reais em assinaturas mensais de ferramentas de chat premium ou geradores de áudio e vídeo pagos com IA para começar a faturar.
+              O modelo de mentores saturados é sempre o mesmo: eles tentam te vender ChatGPT Plus, Jasper, Midjourney e ElevenLabs pagos — somando R$400 a R$600 por mês — só para você começar. Mentira. O ChatGPT gratuito, o Gemini gratuito, o Claude gratuito e o Leonardo.AI gratuito fazem tudo isso juntos, sem gastar um centavo.
             </p>
 
             <blockquote className="border-l-4 border-orange-500 pl-4 py-1.5 italic text-xs md:text-sm text-gray-300 bg-white/5 rounded-r-sm">
@@ -345,6 +344,9 @@ export default function App() {
             <h3 className="text-xl md:text-3xl font-black text-white tracking-tight uppercase leading-tight leading-none">
               Diga Adeus às Mensalidades das IAs <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 italic">Hoje</span>
             </h3>
+            <p className="text-orange-400 text-xs md:text-sm font-medium leading-relaxed font-sans font-semibold">
+              Chega de pagar R$97 no ChatGPT Plus, R$104 no Claude Pro ou R$52 no Midjourney. Com o Método Multi-IA você usa ChatGPT, Gemini, Claude e Leonardo.AI — todos gratuitos — orquestrados para trabalhar por você.
+            </p>
             <p className="text-gray-400 text-xs md:text-sm font-light leading-relaxed font-sans">
               Garanta acesso a todo o material do e-book por apenas uma parcela única de <strong className="text-white whitespace-nowrap">R$ 98,00</strong>. Orquestre as Inteligências Artificiais gratuitas de sua preferência e potencialize suas vendas em tempo recorde!
             </p>
