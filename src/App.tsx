@@ -55,10 +55,10 @@ export default function App() {
       <div className="bg-[#0a0a0a] border-b border-white/10 text-center py-2 px-4 shadow-md sticky top-0 z-40 backdrop-blur-md bg-opacity-95">
         <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 flex-wrap text-[10px] md:text-xs font-mono">
           <span className="bg-orange-600 text-white px-2 py-0.5 rounded-sm font-black uppercase text-[9px] tracking-wider animate-pulse shrink-0">
-             Vagas Premium
+             Oferta Especial
           </span>
           <span className="font-medium text-gray-400">
-            Preço Promocional com <strong className="text-white">40% de Desconto Especial</strong> expira hoje!
+            Acesso completo por <strong className="text-white">R$ 98,00 — sem mensalidade</strong>. Garantia de 7 dias.
           </span>
           <a
             href="https://pay.kiwify.com.br/79zqIoV"
@@ -112,7 +112,7 @@ export default function App() {
           </h1>
 
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed max-w-xl">
-            Com o <strong className="text-white">Ebook Método Multi-IA</strong> eu te ensino a usar várias IAs para <strong>gerar renda ou criar conteúdo</strong> — sem pagar mensalidade nenhuma. Dentro do ebook tem um <strong className="text-orange-400">Gerador de Prompts Prontos</strong> que cria prompts personalizados para o seu nicho. É só copiar, colar e ver a mágica acontecer.
+            O <strong className="text-white">Ebook Método Multi-IA</strong> te mostra como usar várias IAs para <strong>gerar renda ou criar conteúdo</strong> — sem pagar mensalidade nenhuma. Dentro do ebook tem um <strong className="text-orange-400">Gerador de Prompts Prontos</strong> que cria prompts personalizados para o seu nicho. É só copiar, colar e ver a mágica acontecer.
           </p>
 
           <div className="grid grid-cols-3 gap-3">
@@ -136,7 +136,7 @@ export default function App() {
                 <BookmarkCheck size={14} />
               </div>
               <p className="text-xs md:text-sm text-gray-300 font-light">
-                <strong>Orquestração Lógica:</strong> Aprenda a usar ChatGPT para raciocinar, Gemini para pesquisar, Claude para escrever e Leonardo.AI para criar imagens — tudo grátis, tudo junto, tudo no seu ritmo.
+                <strong>Como usar cada IA no momento certo:</strong> ChatGPT para raciocinar, Gemini para pesquisar, Claude para escrever e Leonardo.AI para criar imagens — tudo grátis, tudo junto, tudo no seu ritmo.
               </p>
             </div>
             
@@ -145,7 +145,7 @@ export default function App() {
                 <BookmarkCheck size={14} />
               </div>
               <p className="text-xs md:text-sm text-gray-300 font-light">
-                <strong>Tempo Recorde:</strong> Sistema cirúrgico estruturado do zero à publicação comercial de eBooks e Canais Dark rentáveis.
+                <strong>Resultado em 1 fim de semana:</strong> Do zero à publicação do seu primeiro eBook ou canal de conteúdo — seguindo o passo a passo do ebook.
               </p>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function App() {
                rel="noopener noreferrer"
                className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black py-4 px-6 rounded-sm transition-all duration-300 font-sans text-xs md:text-sm uppercase tracking-tighter flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.3)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group transform hover:-translate-y-0.5 text-center"
             >
-               QUERO DOMINAR O MERCADO AGORA
+               QUERO MEU ACESSO AGORA — R$ 98,00
                <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -210,7 +210,7 @@ export default function App() {
             </span>
             
             <h3 className="text-2xl md:text-4xl font-extrabold text-white tracking-tight leading-none uppercase">
-              "Você foi enganado a achar que precisa de assinaturas Pro caras..."
+              Por que você gasta mais e produz menos com IA?
             </h3>
             
             <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
@@ -500,11 +500,11 @@ export default function App() {
           </span>
 
           <h2 className="text-3xl md:text-6xl font-extrabold text-white tracking-tight uppercase leading-none">
-            Pronto Para Dominar o Mercado com Pilares de Inteligência Artificial?
+            Quer usar IA para criar conteúdo ou gerar renda — sem assinar nada?
           </h2>
 
           <p className="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
-            Abandone agora mesmo as mensalidades de dezenas de ferramentas absurdas. Domine a orquestração mestre sob os ensinamentos práticos do Método Multi-IA.
+            O Ebook Método Multi-IA mostra o caminho completo: quais IAs gratuitas usar, quando usar cada uma, e os prompts prontos para o seu nicho. Uma compra. Acesso por 1 ano. Sem mensalidade.
           </p>
 
           {/* Pricing tag list card inside sales offer */}
