@@ -517,14 +517,14 @@ export default function App() {
             <div className="space-y-1">
               <span className="text-xs text-orange-500 font-bold font-mono uppercase tracking-wider block">PREÇO PROMOCIONAL POR TEMPO LIMITADO</span>
               <div className="text-xs text-gray-500 font-medium line-through font-mono uppercase">De R$ 163,34 por apenas:</div>
-              <div className="py-2">
-                <span className="text-xs uppercase font-mono tracking-wider font-semibold text-gray-400">12x de</span>
-                <div className="flex items-center justify-center gap-1.5 leading-none">
-                  <span className="text-sm font-bold text-orange-500 font-sans">R$</span>
-                  <span className="text-4xl md:text-6xl font-black text-white font-sans tracking-tighter leading-none">10,14</span>
+              <div className="py-4 text-center">
+                <span className="text-sm uppercase font-mono tracking-widest font-bold text-gray-500 block mb-1">12x de</span>
+                <div className="flex items-center justify-center gap-2 leading-none">
+                  <span className="text-2xl font-black text-orange-500 font-sans self-start mt-2">R$</span>
+                  <span className="text-7xl md:text-9xl font-black text-white font-sans tracking-tighter leading-none">10,14</span>
                 </div>
-                <div className="text-xs text-gray-400 uppercase tracking-wider font-bold font-mono mt-1 pt-1.5 border-t border-white/5 inline-block">
-                  ou <span className="text-emerald-400">R$ 98,00</span> à vista no PIX/Cartão
+                <div className="text-xs text-gray-400 uppercase tracking-wider font-bold font-mono mt-3 pt-3 border-t border-white/5">
+                  ou <span className="text-emerald-400 text-sm">R$ 98,00</span> à vista no PIX/Cartão
                 </div>
               </div>
               <span className="text-[10px] text-gray-500 font-mono block">Sem assinaturas ou taxas ocultas • Acesso imediato</span>
