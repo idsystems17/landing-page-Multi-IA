@@ -82,7 +82,7 @@ export default function App() {
 
         <nav className="hidden md:flex items-center gap-6 text-[10px] text-gray-400 font-bold tracking-widest font-mono">
           <a href="#about" className="hover:text-orange-500 transition-colors uppercase">O PROBLEMA</a>
-          <a href="#simulator" className="hover:text-orange-500 transition-colors uppercase">GERADOR DE ROADMAP</a>
+          <a href="#simulator" className="hover:text-orange-500 transition-colors uppercase">GERADOR DE PROMPTS</a>
           <a href="#curriculum" className="hover:text-orange-500 transition-colors uppercase">CONTEÚDO</a>
           <a href="#certificate-panel" className="hover:text-orange-500 transition-colors uppercase">CERTIFICADO</a>
         </nav>
@@ -112,7 +112,7 @@ export default function App() {
           </h1>
 
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed max-w-xl">
-            Se você acha que precisa pagar <strong>R$97/mês no ChatGPT Plus, R$104 no Claude Pro e R$97 no Gemini Advanced</strong> para ter resultados reais — você foi enganado. O verdadeiro segredo é saber usar as versões gratuitas do <strong className="text-white italic">ChatGPT, Gemini, Claude e Leonardo.AI trabalhando juntos</strong>.
+            Com o <strong className="text-white">Ebook Método Multi-IA</strong> eu te ensino a usar várias IAs para <strong>gerar renda ou criar conteúdo</strong> — sem pagar mensalidade nenhuma. Dentro do ebook tem um <strong className="text-orange-400">Gerador de Prompts Prontos</strong> que cria prompts personalizados para o seu nicho. É só copiar, colar e ver a mágica acontecer.
           </p>
 
           <div className="grid grid-cols-3 gap-3">

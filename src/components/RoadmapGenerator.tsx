@@ -29,10 +29,10 @@ export default function RoadmapGenerator() {
             <Activity size={12} className="shrink-0" /> EXEMPLO DE ROTEIRO DE SUCESSO
           </div>
           <h3 className="text-xl md:text-3xl font-black text-white tracking-tight uppercase">
-            Gerador de Roadmap Multi-IA
+            Gerador de Prompts Prontos
           </h3>
           <p className="text-gray-400 text-xs md:text-sm font-sans font-light leading-relaxed max-w-2xl">
-            Amostra estática do planejador inteligente. Informe seu nicho e receba um roadmap personalizado dizendo qual IA gratuita usar em cada etapa — ChatGPT, Gemini, Claude ou Leonardo.AI — com os prompts prontos para cada uma.
+            Amostra estática do gerador inteligente. Informe seu nicho e receba prompts personalizados prontos para usar — no ChatGPT, Gemini, Claude ou Leonardo.AI — é só copiar, colar e ver a mágica acontecer.
           </p>
         </div>
 
