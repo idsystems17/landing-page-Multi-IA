@@ -10,7 +10,7 @@ export default function FinanceSimulator() {
   const checklist = [
     { id: 1, text: "Definir um nicho vencedor que combine paixão e demanda alta", completed: true },
     { id: 2, text: "Escolher e configurar 2 IAs gratuitas complementares", completed: true },
-    { id: 3, text: "Gerar um Roadmap Personalizado usando o gerador de roadmap", completed: true },
+    { id: 3, text: "Gerar Prompts Prontos para o seu nicho usando o Gerador de Prompts", completed: true },
     { id: 4, text: "Criar uma conta gratuita na Kiwify ou Hotmart", completed: false },
     { id: 5, text: "Gerar um mega-prompt de vendas da aula de E-books e rodar na IA de redação de sua preferência", completed: false },
     { id: 6, text: "Criar criativo estético no Canva em menos de 10 minutos", completed: false },

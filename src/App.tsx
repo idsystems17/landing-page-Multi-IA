@@ -3,625 +3,331 @@ import {
   Sparkles,
   ShieldCheck,
   ChevronRight,
-  TrendingUp,
-  Brain,
-  Video,
-  Terminal,
-  Gem,
-  ArrowUpRight,
-  BookmarkCheck,
-  RotateCcw,
-  BookOpen,
-  MessageCircle,
   Clock,
-  HelpCircle,
-  FileCheck,
   Zap,
   Star,
-  Shield
+  Check,
+  BookOpen,
+  Video,
+  Terminal,
+  TrendingUp,
+  Layers,
 } from "lucide-react";
 
-// Components
 import CountdownTimer from "./components/CountdownTimer";
-import ModulesAccordion from "./components/ModulesAccordion";
-import FinanceSimulator from "./components/FinanceSimulator";
-import RoadmapGenerator from "./components/RoadmapGenerator";
-import PromptSandbox from "./components/PromptSandbox";
-import CertificateGenerator from "./components/CertificateGenerator";
 import ReviewsSection from "./components/ReviewsSection";
 import FAQSection from "./components/FAQSection";
 import LegalModals from "./components/LegalModals";
-import CheckoutModal from "./components/CheckoutModal";
 
-// Import generated assets (paths matched exactly)
 // @ts-ignore
 import bundleMockupImg from "./assets/images/product_mockup_1780603159120.png";
 
 export default function App() {
-  const [checkoutPrice, setCheckoutPrice] = useState<number>(98.00);
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
-  
-  // Legal Modals state
   const [activeLegalTab, setActiveLegalTab] = useState<"privacy" | "terms" | "disclaimer" | null>(null);
 
-  const openCheckout = () => {
-    window.open("https://pay.kiwify.com.br/79zqIoV", "_blank", "noopener,noreferrer");
-  };
-
   return (
-    <div className="bg-[#050505] text-gray-100 min-h-screen selection:bg-orange-600 selection:text-white font-sans leading-relaxed flex flex-col justify-between">
-      
-      {/* 1. TOP MARKETING TICKER BANNER (Urgency) */}
-      <div className="bg-[#0a0a0a] border-b border-white/10 text-center py-2 px-4 shadow-md sticky top-0 z-40 backdrop-blur-md bg-opacity-95">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 flex-wrap text-[10px] md:text-xs font-mono">
-          <span className="bg-orange-600 text-white px-2 py-0.5 rounded-sm font-black uppercase text-[9px] tracking-wider animate-pulse shrink-0">
-             Vagas Premium
-          </span>
-          <span className="font-medium text-gray-400">
-            Preço Promocional com <strong className="text-white">40% de Desconto Especial</strong> expira hoje!
-          </span>
-          <a
-            href="https://pay.kiwify.com.br/79zqIoV"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer text-orange-500 hover:text-orange-400 font-bold inline-flex items-center gap-0.5 transition-colors pl-2"
-          >
-            Quero Economizar Agora <ChevronRight size={14} />
-          </a>
-        </div>
+    <div className="bg-[#050505] text-gray-100 min-h-screen selection:bg-orange-600 selection:text-white font-sans leading-relaxed flex flex-col">
+
+      {/* TOPO — urgência sutil */}
+      <div className="bg-orange-600 text-white text-center py-2 px-4 text-[11px] font-mono font-bold tracking-wider sticky top-0 z-50">
+        Acesso completo por R$ 98,00 · Garantia de 7 dias · Sem mensalidade
       </div>
 
-      {/* 2. TRANSPARENT HEADER NAVIGATION */}
-      <header className="max-w-6xl mx-auto w-full px-4 py-5 flex items-center justify-between border-b border-white/10">
-        <div className="flex items-center gap-2 bg-[#0a0a0a] border border-white/10 rounded-sm px-4 py-1.5">
-          <div className="h-5 w-5 rounded-sm bg-orange-600 flex items-center justify-center shadow-md shadow-orange-600/20">
-            <Sparkles size={11} className="text-white inline" />
+      {/* HEADER */}
+      <header className="max-w-5xl mx-auto w-full px-4 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="h-6 w-6 rounded-sm bg-orange-600 flex items-center justify-center">
+            <Sparkles size={13} className="text-white" />
           </div>
-          <span className="font-sans text-xs font-black tracking-tighter text-white">E-BOOK MÉTODO MULTI-IA</span>
+          <span className="text-sm font-black tracking-tight text-white">MÉTODO MULTI-IA</span>
         </div>
-
-        <nav className="hidden md:flex items-center gap-6 text-[10px] text-gray-400 font-bold tracking-widest font-mono">
-          <a href="#about" className="hover:text-orange-500 transition-colors uppercase">O PROBLEMA</a>
-          <a href="#simulator" className="hover:text-orange-500 transition-colors uppercase">GERADOR DE ROADMAP</a>
-          <a href="#curriculum" className="hover:text-orange-500 transition-colors uppercase">CONTEÚDO</a>
-          <a href="#certificate-panel" className="hover:text-orange-500 transition-colors uppercase">CERTIFICADO</a>
-        </nav>
-
         <a
           href="https://pay.kiwify.com.br/79zqIoV"
           target="_blank"
           rel="noopener noreferrer"
-          className="cursor-pointer bg-[#050505] border border-white/10 hover:border-orange-500 text-orange-500 hover:text-white transition-all duration-300 rounded-sm py-1.5 px-4 font-mono text-[10px] tracking-wider font-bold inline-block text-center"
+          className="bg-orange-600 hover:bg-orange-500 text-white font-black text-[11px] py-2 px-4 rounded-sm transition-all uppercase tracking-wider"
         >
-          GARANTIR VAGA
+          Comprar Agora
         </a>
       </header>
 
-      {/* 3. CORE PERSUASIVE HERO SECTION */}
-      <section className="max-w-6xl mx-auto px-4 py-10 md:py-16 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
-        {/* Left Side Copywriting */}
-        <div className="lg:col-span-7 space-y-6">
-          
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-600/10 text-orange-400 border border-orange-600/20 rounded-sm text-xs font-mono font-bold tracking-widest uppercase">
-            <Sparkles size={12} className="animate-spin text-orange-500" /> MENSALIDADES DE IA NUNCA MAIS
-          </div>
+      {/* 1. HERO — gancho principal */}
+      <section className="max-w-3xl mx-auto px-4 pt-12 pb-16 text-center space-y-6">
 
-          <h1 className="text-4xl md:text-7xl font-black text-white leading-[0.85] tracking-tight uppercase">
-            DOMINE O CHATGPT, GEMINI E CLAUDE — <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 italic">SEM PAGAR</span> MENSALIDADE NENHUMA
-          </h1>
-
-          <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed max-w-xl">
-            Se você acha que precisa pagar <strong>R$97/mês no ChatGPT Plus, R$104 no Claude Pro e R$97 no Gemini Advanced</strong> para ter resultados reais — você foi enganado. O verdadeiro segredo é saber usar as versões gratuitas do <strong className="text-white italic">ChatGPT, Gemini, Claude e Leonardo.AI trabalhando juntos</strong>.
-          </p>
-
-          <div className="grid grid-cols-3 gap-3">
-            <div className="p-4 bg-white/5 border border-white/10 rounded-sm">
-              <span className="block text-xl md:text-3xl font-black mb-1 font-sans">R$ 0,00</span>
-              <span className="text-[9px] text-gray-500 uppercase tracking-wider block font-mono">Assinaturas</span>
-            </div>
-            <div className="p-4 bg-white/5 border border-white/10 rounded-sm">
-              <span className="block text-xl md:text-3xl font-black mb-1 font-sans">10x +</span>
-              <span className="text-[9px] text-gray-500 uppercase tracking-wider block font-mono">Velocidade</span>
-            </div>
-            <div className="p-4 bg-orange-600/10 border border-orange-600/20 rounded-sm">
-              <span className="block text-xl md:text-3xl font-black text-orange-500 mb-1 font-sans">100%</span>
-              <span className="text-[9px] text-orange-400 uppercase tracking-wider block font-mono">Executável</span>
-            </div>
-          </div>
-
-          <div className="space-y-3 p-5 bg-[#0a0a0a] rounded-sm border border-white/10">
-            <div className="flex gap-3 items-start">
-              <div className="bg-orange-500/10 border border-orange-500/20 p-1 rounded text-orange-400 mt-0.5 shrink-0">
-                <BookmarkCheck size={14} />
-              </div>
-              <p className="text-xs md:text-sm text-gray-300 font-light">
-                <strong>Orquestração Lógica:</strong> Aprenda a usar ChatGPT para raciocinar, Gemini para pesquisar, Claude para escrever e Leonardo.AI para criar imagens — tudo grátis, tudo junto, tudo no seu ritmo.
-              </p>
-            </div>
-            
-            <div className="flex gap-3 items-start border-t border-white/5 pt-3">
-              <div className="bg-orange-500/10 border border-orange-500/20 p-1 rounded text-orange-400 mt-0.5 shrink-0">
-                <BookmarkCheck size={14} />
-              </div>
-              <p className="text-xs md:text-sm text-gray-300 font-light">
-                <strong>Tempo Recorde:</strong> Sistema cirúrgico estruturado do zero à publicação comercial de eBooks e Canais Dark rentáveis.
-              </p>
-            </div>
-          </div>
-
-          {/* Core Call-to-Action widget block */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center max-w-sm pt-2">
-            <a
-               href="https://pay.kiwify.com.br/79zqIoV"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black py-4 px-6 rounded-sm transition-all duration-300 font-sans text-xs md:text-sm uppercase tracking-tighter flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.3)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group transform hover:-translate-y-0.5 text-center"
-            >
-               QUERO DOMINAR O MERCADO AGORA
-               <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </a>
-          </div>
-
-          <div className="flex items-center gap-4 text-[10px] md:text-xs font-mono text-gray-500 flex-wrap">
-            <span className="flex items-center gap-1.5">
-              <ShieldCheck size={14} className="text-orange-500" /> Garantia de 7 Dias Inclusa
-            </span>
-            <span>•</span>
-            <span className="flex items-center gap-1.5">
-              <Clock size={14} className="text-orange-500" /> Acesso por 1 Ano Completo
-            </span>
-          </div>
-
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-600/10 text-orange-400 border border-orange-600/20 rounded-sm text-xs font-mono font-bold tracking-widest uppercase">
+          <Zap size={11} className="animate-pulse" /> Sem pagar mensalidade nenhuma
         </div>
 
-        {/* Right Side Showcase Graphic/Countdown Timer */}
-        <div className="lg:col-span-5 space-y-6">
-          
-          <div className="relative rounded-sm overflow-hidden border border-white/10 bg-gradient-to-b from-[#06060c] to-[#010103] p-6 flex flex-col items-center justify-between min-h-[300px] md:min-h-[340px] shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
-            {/* Ambient subtle light blur */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 blur-3xl rounded-full pointer-events-none"></div>
-            
-            <img
-              src={bundleMockupImg}
-              alt="Ebook Desmistificando as IAs"
-              referrerPolicy="no-referrer"
-              className="h-44 md:h-52 w-auto object-contain my-auto"
-            />
-            
-            <div className="w-full text-left space-y-1 bg-[#050505]/70 backdrop-blur-sm rounded-sm p-3.5 border border-white/5 mt-4">
-              <span className="text-[10px] text-orange-500 uppercase font-mono font-bold tracking-widest block">AMBIENTE MESTRE</span>
-              <p className="text-[11px] text-white font-medium">Como fazer ChatGPT, Gemini, Claude e Leonardo.AI trabalharem juntos para você — sem pagar nada</p>
+        <h1 className="text-4xl md:text-6xl font-black text-white leading-[0.9] tracking-tight uppercase">
+          Use ChatGPT, Gemini e Claude{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 italic">
+            de graça
+          </span>{" "}
+          — e ainda gere renda com isso
+        </h1>
+
+        <p className="text-gray-400 text-base md:text-lg font-light leading-relaxed max-w-xl mx-auto">
+          O <strong className="text-white">Ebook Método Multi-IA</strong> te mostra exatamente quais IAs gratuitas usar, quando usar cada uma, e entrega{" "}
+          <strong className="text-orange-400">prompts prontos para o seu nicho</strong>. É só copiar e colar.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
+          <a
+            href="https://pay.kiwify.com.br/79zqIoV"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-black py-5 px-10 rounded-sm transition-all duration-300 text-base md:text-lg uppercase tracking-tight flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.35)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group"
+          >
+            QUERO MEU ACESSO AGORA — R$ 98,00
+            <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+
+        <div className="flex items-center justify-center gap-4 text-[11px] font-mono text-gray-500 flex-wrap">
+          <span className="flex items-center gap-1"><ShieldCheck size={13} className="text-orange-500" /> Garantia 7 dias</span>
+          <span>·</span>
+          <span className="flex items-center gap-1"><Clock size={13} className="text-orange-500" /> Acesso por 1 ano</span>
+          <span>·</span>
+          <span className="flex items-center gap-1"><Zap size={13} className="text-orange-500" /> Acesso imediato</span>
+        </div>
+
+        <div className="pt-4">
+          <img
+            src={bundleMockupImg}
+            alt="Ebook Método Multi-IA"
+            className="h-52 md:h-64 w-auto object-contain mx-auto"
+          />
+        </div>
+      </section>
+
+      {/* 2. DOR — gancho do scroll */}
+      <section className="bg-[#0a0a0a] border-y border-white/10 py-14">
+        <div className="max-w-2xl mx-auto px-4 text-center space-y-5">
+          <span className="text-xs font-mono uppercase text-red-400 tracking-widest">O problema</span>
+          <h2 className="text-2xl md:text-4xl font-black text-white uppercase leading-tight">
+            Você usa IA mas sente que poderia tirar muito mais?
+          </h2>
+          <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
+            A maioria das pessoas abre o ChatGPT, digita uma pergunta genérica e fica desapontada com o resultado. O problema não é a ferramenta — <strong className="text-white">é não saber combinar as IAs certas para cada tarefa.</strong>
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
+            {[
+              { stat: "R$ 0", label: "de mensalidade necessária" },
+              { stat: "72h", label: "para lançar seu primeiro produto" },
+              { stat: "4 IAs", label: "gratuitas trabalhando juntas" },
+            ].map((item) => (
+              <div key={item.label} className="bg-[#050505] border border-white/10 rounded-sm p-4 text-center">
+                <span className="block text-2xl md:text-3xl font-black text-orange-500">{item.stat}</span>
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider font-mono">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. VIRADA — a solução */}
+      <section className="py-14 max-w-2xl mx-auto px-4 text-center space-y-6">
+        <span className="text-xs font-mono uppercase text-orange-400 tracking-widest">A solução</span>
+        <h2 className="text-2xl md:text-4xl font-black text-white uppercase leading-tight">
+          Um ebook que funciona como um assistente pessoal de IA
+        </h2>
+        <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
+          O Método Multi-IA não é teoria. É um passo a passo prático com os prompts já escritos para você — para criar conteúdo, vender ebooks ou trabalhar como freelancer usando IAs gratuitas.
+        </p>
+
+        <div className="space-y-3 text-left">
+          {[
+            { icon: Layers, text: "ChatGPT para raciocinar, Gemini para pesquisar, Claude para escrever, Leonardo.AI para criar imagens — tudo grátis" },
+            { icon: BookOpen, text: "Prompts prontos para o seu nicho — copie, cole e adapte em segundos" },
+            { icon: TrendingUp, text: "Do zero ao seu primeiro produto digital em 1 fim de semana" },
+            { icon: Terminal, text: "Funciona para quem quer criar conteúdo, vender ebooks ou prestar serviço" },
+          ].map(({ icon: Icon, text }) => (
+            <div key={text} className="flex items-start gap-3 bg-[#0a0a0a] border border-white/10 rounded-sm p-4">
+              <div className="bg-orange-500/10 border border-orange-500/20 p-1.5 rounded text-orange-400 shrink-0 mt-0.5">
+                <Icon size={14} />
+              </div>
+              <p className="text-sm text-gray-300 font-light leading-relaxed">{text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. PROVA SOCIAL — depoimentos */}
+      <section className="bg-[#0a0a0a] border-y border-white/10 py-14">
+        <div className="max-w-5xl mx-auto px-4 text-center mb-8 space-y-2">
+          <span className="text-xs font-mono uppercase text-orange-400 tracking-widest">Quem já usou</span>
+          <h2 className="text-2xl md:text-4xl font-black text-white uppercase">Resultados reais</h2>
+        </div>
+        <ReviewsSection />
+      </section>
+
+      {/* 5. CONTEÚDO — o que você leva */}
+      <section className="py-14 max-w-3xl mx-auto px-4 space-y-8">
+        <div className="text-center space-y-2">
+          <span className="text-xs font-mono uppercase text-orange-400 tracking-widest">O que está dentro</span>
+          <h2 className="text-2xl md:text-4xl font-black text-white uppercase">4 módulos práticos</h2>
+          <p className="text-gray-400 text-sm font-light">Sem enrolação. Cada módulo resolve um problema real.</p>
+        </div>
+
+        <div className="space-y-3">
+          {[
+            { num: "01", icon: Layers, title: "Fundamentos Multi-IA", desc: "Como combinar ChatGPT, Gemini, Claude e Leonardo.AI para produzir 10x mais rápido — sem pagar nada.", tag: "Base de tudo" },
+            { num: "02", icon: Video, title: "Canal de Conteúdo Sem Aparecer", desc: "Crie um canal de vídeos no YouTube ou TikTok sem mostrar o rosto. IAs gratuitas geram roteiro, voz e imagem.", tag: "Para criadores" },
+            { num: "03", icon: BookOpen, title: "Venda Ebooks de R$ 19 a R$ 97", desc: "Monte um ebook completo com IA e publique na Kiwify ou Hotmart. Do conteúdo ao checkout em 72h.", tag: "Para infoprodutores" },
+            { num: "04", icon: Terminal, title: "Freelancer com IA", desc: "Preste serviços no Fiverr ou Workana usando IAs para entregar copies, artigos e roteiros de alta qualidade.", tag: "Para freelancers" },
+          ].map((mod) => {
+            const Icon = mod.icon;
+            return (
+              <div key={mod.num} className="flex items-start gap-4 bg-[#0a0a0a] border border-white/10 rounded-sm p-5 hover:border-orange-500/20 transition-colors">
+                <div className="p-2.5 rounded-sm bg-[#050505] border border-white/5 shrink-0">
+                  <Icon className="h-5 w-5 text-orange-500" />
+                </div>
+                <div className="flex-1 space-y-1">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-[10px] font-mono text-orange-500 font-bold uppercase tracking-widest">Módulo {mod.num}</span>
+                    <span className="text-[10px] bg-orange-500/10 border border-orange-500/20 text-orange-400 font-mono px-2 py-0.5 rounded-sm">{mod.tag}</span>
+                  </div>
+                  <h3 className="text-sm font-bold text-white uppercase tracking-tight">{mod.title}</h3>
+                  <p className="text-xs text-gray-400 font-light leading-relaxed">{mod.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* 6. PREÇO — dramático, uma vez só */}
+      <section className="bg-[#0a0a0a] border-y border-white/10 py-14">
+        <div className="max-w-md mx-auto px-4 text-center space-y-6">
+          <span className="text-xs font-mono uppercase text-orange-400 tracking-widest">Investimento</span>
+          <h2 className="text-2xl md:text-3xl font-black text-white uppercase">Uma compra. Sem mensalidade.</h2>
+
+          <div className="bg-[#050505] border-2 border-orange-600/40 rounded-sm p-8 space-y-5 shadow-[0_0_40px_rgba(234,88,12,0.15)] relative overflow-hidden">
+            <div className="absolute top-0 right-0 py-1 px-3 bg-red-600 text-white font-black font-mono text-[9px] uppercase tracking-wider">
+              40% OFF
+            </div>
+
+            <div className="space-y-1">
+              <span className="text-xs text-gray-500 font-mono line-through block">De R$ 163,34 por apenas:</span>
+              <span className="text-lg font-black text-gray-400 font-mono uppercase block">12x de</span>
+              <div className="flex items-center justify-center gap-1 leading-none">
+                <span className="text-3xl font-black text-orange-500 self-start mt-3">R$</span>
+                <span className="text-[9rem] md:text-[11rem] font-black text-white tracking-tighter leading-none">10,14</span>
+              </div>
+              <span className="text-sm text-gray-400 font-mono block pt-2">
+                ou <strong className="text-emerald-400">R$ 98,00</strong> à vista no PIX
+              </span>
+            </div>
+
+            <a
+              href="https://pay.kiwify.com.br/79zqIoV"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-orange-600 hover:bg-orange-500 text-white font-black text-base md:text-lg py-5 rounded-sm transition-all duration-300 shadow-[0_4px_20px_rgba(234,88,12,0.3)] uppercase tracking-tight text-center inline-block"
+            >
+              QUERO MEU ACESSO AGORA
+            </a>
+
+            <div className="space-y-2 text-left pt-2 border-t border-white/5">
+              {[
+                "Acesso imediato após o pagamento",
+                "Acesso por 1 ano completo",
+                "Sem mensalidade ou taxas extras",
+                "Garantia incondicional de 7 dias",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-2 text-xs text-gray-400">
+                  <Check size={13} className="text-orange-500 shrink-0" />
+                  {item}
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Immersive Countdown Urgency Box */}
           <CountdownTimer />
         </div>
       </section>
 
-      {/* 4. THE CORE TRUTH / DEEP COGNITIVE EXPOSURE (Why Multi-IA?) */}
-      <section id="about" className="bg-[#0a0a0a] py-16 border-y border-white/10">
-        <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          
-          <div className="space-y-5">
-            <span className="text-xs font-mono uppercase bg-red-500/10 border border-red-500/20 text-red-500 px-2.5 py-1 rounded-sm inline-block">
-               O Grande Blefe do Mercado
-            </span>
-            
-            <h3 className="text-2xl md:text-4xl font-extrabold text-white tracking-tight leading-none uppercase">
-              "Você foi enganado a achar que precisa de assinaturas Pro caras..."
-            </h3>
-            
-            <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
-              O modelo de mentores saturados é sempre o mesmo: eles tentam te vender ChatGPT Plus, Jasper, Midjourney e ElevenLabs pagos — somando R$400 a R$600 por mês — só para você começar. Mentira. O ChatGPT gratuito, o Gemini gratuito, o Claude gratuito e o Leonardo.AI gratuito fazem tudo isso juntos, sem gastar um centavo.
-            </p>
-
-            <blockquote className="border-l-4 border-orange-500 pl-4 py-1.5 italic text-xs md:text-sm text-gray-300 bg-white/5 rounded-r-sm">
-              "O verdadeiro segredo mestre do mercado digital não é possuir UMA ferramenta de R$ 100/mês, mas sim saber orquestrar múltiplas Inteligências Artificiais gratuitas para trabalharem integradas de forma complementar para você."
-            </blockquote>
-
-            <p className="text-gray-400 text-sm font-light">
-              Com o <strong className="text-white font-semibold">Método Multi-IA</strong>, você aprenderá um fluxo passo a passo de como extrair o melhor de cada ferramenta sem gastar um centavo em assinaturas caras!
-            </p>
+      {/* 7. GARANTIA */}
+      <section className="py-14 max-w-2xl mx-auto px-4 text-center space-y-5">
+        <div className="flex items-center justify-center gap-3">
+          <span className="text-6xl font-black text-orange-500">7</span>
+          <div className="text-left">
+            <span className="block text-lg font-black text-white uppercase">dias de garantia</span>
+            <span className="block text-sm text-gray-400 font-light">incondicional</span>
           </div>
-
-          {/* Interactive display showing bundle details card */}
-          <div className="bg-white/5 border border-white/10 rounded-sm p-6 md:p-8 relative overflow-hidden flex flex-col justify-between w-full h-full min-h-[350px]">
-            
-            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 blur-3xl rounded-full pointer-events-none"></div>
-            
-            <div className="space-y-6">
-              <div className="text-left space-y-1">
-                <span className="text-[10px] font-mono text-orange-500 font-bold uppercase tracking-widest block">CONTEÚDO DO E-BOOK</span>
-                <h4 className="text-xl font-extrabold text-white uppercase tracking-tight">MÉTODO MULTI-IA</h4>
-                <p className="text-xs text-gray-400 font-light font-sans">
-                  Tudo o que você precisa para dominar a inteligência artificial sem gastar com mensalidades caras.
-                </p>
-              </div>
-
-              {/* High precision aesthetic item features instead of image */}
-              <div className="space-y-3.5 text-left pt-2">
-                <div className="flex gap-3 items-center">
-                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
-                    <BookOpen size={14} />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-white block uppercase tracking-wide">E-book Interativo Completo</span>
-                    <span className="text-[10px] text-gray-400 font-sans">Leitura dinâmica com links úteis e guias</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-3 items-center">
-                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
-                    <Terminal size={14} />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-white block uppercase tracking-wide">Arsenal de Mega-Prompts Mestre</span>
-                    <span className="text-[10px] text-gray-400 font-sans">Instruções prontas para Inteligências Artificiais de sua preferência</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-3 items-center">
-                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
-                    <TrendingUp size={14} />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-white block uppercase tracking-wide">Simulador Inteligente Integrado</span>
-                    <span className="text-[10px] text-gray-400 font-sans">Roteiro estratégico adaptável ao seu projeto</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-3 items-center">
-                  <div className="h-7 w-7 rounded-sm bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 shrink-0">
-                    <FileCheck size={14} />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-white block uppercase tracking-wide">Emissor de Certificado de Maestria</span>
-                    <span className="text-[10px] text-gray-400 font-sans">Valide seu conhecimento prático após o quiz</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="w-full text-center space-y-2 mt-6 pt-4 border-t border-white/5">
-              <span className="text-[11px] font-mono text-orange-500 font-bold uppercase tracking-widest block">ACESSO IMEDIATO POR 1 ANO</span>
-              <p className="text-xs text-gray-400 font-light max-w-sm mx-auto text-center font-sans">
-                Garantido sem custos extras. Aproveite todas as atualizações futuras sem nenhum centavo de mensalidade.
-              </p>
-            </div>
-
-          </div>
-
+        </div>
+        <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed max-w-md mx-auto">
+          Se em até 7 dias você achar que o conteúdo não serve para você, devolvemos 100% do valor. Sem perguntas, sem burocracia.
+        </p>
+        <div className="inline-flex items-center gap-2 bg-orange-600/10 border border-orange-500/20 rounded-full px-5 py-2 text-xs font-mono text-orange-400 font-bold uppercase tracking-wider">
+          <ShieldCheck size={14} /> Risco Zero
         </div>
       </section>
 
-      {/* 5. BONUS INTERACTIVE DYNAMIC BLOCK 1: ROADMAP GENERATOR */}
-      <section className="py-6 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
-        {/* Dynamic Roadmap Generator Module */}
-        <RoadmapGenerator />
-      </section>
-
-      {/* 5.5. BONUS INTERACTIVE DYNAMIC BLOCK 1.5: FINANCE SIMULATOR & DESAFIO */}
-      <section className="py-6 bg-[#050505]">
-        {/* Dynamic Simulator & Gamified Checklist Challenge Module */}
-        <FinanceSimulator />
-      </section>
-
-      {/* 6. BONUS INTERACTIVE DYNAMIC BLOCK 2: PROMPT SANDBOX WORKBENCH */}
-      <section className="py-12 bg-[#0a0a0a] border-t border-white/10">
-        <div className="max-w-6xl mx-auto text-center px-4 mb-3">
-          <span className="text-xs font-mono uppercase bg-orange-600/10 border border-orange-600/20 text-orange-400 px-2.5 py-1 rounded-sm tracking-widest inline-block">
-             MÓDULO 4 LABORATÓRIO DE COMANDOS
-          </span>
-          <h2 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight uppercase leading-none mt-3">
-            Simulador de Engenharia de Prompts
-          </h2>
-          <p className="text-gray-400 text-xs md:text-sm max-w-lg mx-auto font-light mt-1.5">
-            Teste uma palhinha das raras instruções ensinadas no curso. Escolha seu nicho de mercado e sinta o poder da copy final humanizada!
-          </p>
+      {/* 8. FAQ */}
+      <section className="bg-[#0a0a0a] border-t border-white/10 py-14">
+        <div className="max-w-3xl mx-auto px-4 text-center mb-8 space-y-2">
+          <span className="text-xs font-mono uppercase text-orange-400 tracking-widest">Dúvidas</span>
+          <h2 className="text-2xl md:text-3xl font-black text-white uppercase">Perguntas frequentes</h2>
         </div>
-
-        {/* Dynamic Prompt Selector Sandbox */}
-        <PromptSandbox />
-      </section>
-
-      {/* 7. DETAILED CURRICULUM ACCORDION (Content breakdown Módulo 1 to 5) */}
-      <section className="py-16 bg-[#050505] border-t border-white/10">
-        <ModulesAccordion />
-      </section>
-
-      {/* 7.5. HIGH CONVERSION BOT-OF-THE-FUNNEL (FUNDO DE FUNIL) BANNER */}
-      <section className="py-6 max-w-6xl mx-auto px-4">
-        <div className="bg-gradient-to-r from-orange-950/40 via-[#0a0a14] to-black border-2 border-orange-500/30 rounded-xl p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(234,88,12,0.1)] relative overflow-hidden">
-          {/* Decorative light trails */}
-          <div className="absolute top-0 right-0 w-48 h-48 bg-orange-600/5 blur-3xl pointer-events-none rounded-full"></div>
-          
-          <div className="space-y-3 max-w-xl text-center lg:text-left">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded font-mono text-[10px] font-bold uppercase tracking-widest leading-none mx-auto lg:mx-0 w-fit">
-              <Zap size={10} className="text-orange-500 animate-pulse" /> OFERTA ESPECIAL DE MATRÍCULA
-            </div>
-            <h3 className="text-xl md:text-3xl font-black text-white tracking-tight uppercase leading-tight leading-none">
-              Diga Adeus às Mensalidades das IAs <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 italic">Hoje</span>
-            </h3>
-            <p className="text-orange-400 text-xs md:text-sm font-medium leading-relaxed font-sans font-semibold">
-              Chega de pagar R$97 no ChatGPT Plus, R$104 no Claude Pro ou R$52 no Midjourney. Com o Método Multi-IA você usa ChatGPT, Gemini, Claude e Leonardo.AI — todos gratuitos — orquestrados para trabalhar por você.
-            </p>
-            <p className="text-gray-400 text-xs md:text-sm font-light leading-relaxed font-sans">
-              Garanta acesso a todo o material do e-book por apenas uma parcela única de <strong className="text-white whitespace-nowrap">R$ 98,00</strong>. Orquestre as Inteligências Artificiais gratuitas de sua preferência e potencialize suas vendas em tempo recorde!
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto shrink-0 bg-black/40 p-4 border border-white/5 rounded-xl">
-            <div className="text-center sm:text-right leading-tight pr-0 sm:pr-4 sm:border-r border-white/10 shrink-0 whitespace-nowrap">
-              <span className="text-[9px] uppercase font-mono text-gray-500 block font-semibold">Valor Especial à Vista</span>
-              <span className="text-sm font-bold text-gray-400 font-mono line-through block">De R$ 163,34 por</span>
-              <span className="text-2xl md:text-3xl font-black text-emerald-400 font-mono block whitespace-nowrap">R$ 98,00</span>
-              <span className="text-xs md:text-sm font-extrabold text-orange-400 block font-mono mt-1">
-                ou 12x de R$ 10,14
-              </span>
-            </div>
-            
-            <div className="w-full sm:w-auto">
-              <a
-                href="https://pay.kiwify.com.br/79zqIoV"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-black text-xs py-3.5 px-6 rounded transition-all duration-300 shadow-[0_0_20px_rgba(234,88,12,0.25)] hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] uppercase tracking-wider text-center inline-block whitespace-nowrap min-h-[44px]"
-              >
-                APROVEITAR AGORA
-              </a>
-              <div className="flex items-center justify-center gap-1 text-[8px] font-mono text-gray-600 mt-2">
-                <ShieldCheck size={10} className="text-orange-500" /> Acesso de 1 Ano • Garantia Premium
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 8. BONUS INTERACTIVE DYNAMIC BLOCK 3: CERTIFICADO DE CONCLUSÃO PRÁTICO (With active Quiz!) */}
-      <section id="certificate" className="py-12 bg-gradient-to-b from-[#050505] to-[#0a0a0a]">
-        <div className="max-w-6xl mx-auto text-center px-4 mb-4">
-          <span className="text-xs font-mono uppercase bg-orange-600/10 border border-orange-600/20 text-orange-400 px-2.5 py-1 rounded-sm tracking-widest inline-block">
-             BÔNUS 3: PRÁTICA COM RECOMPENSA
-          </span>
-          <h2 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight uppercase leading-none mt-3">
-            Emita Seu Certificado de Maestria
-          </h2>
-          <p className="text-gray-400 text-xs md:text-sm max-w-lg mx-auto font-light mt-1.5">
-            Insira seu nome completo, responda corretamente 3 perguntas práticas dos fundamentos de orquestração do curso e visualize seu certificado de conclusão pronto!
-          </p>
-        </div>
-
-        {/* Quiz & Certificate Canvas Generator */}
-        <CertificateGenerator />
-      </section>
-
-      {/* 9. REVIEWS / SOCIAL TESTIMONIAL EVIDENCE */}
-      <section className="py-16 bg-[#0a0a0a] border-t border-white/10">
-        <ReviewsSection />
-      </section>
-
-      {/* 10. GUARANTEE CONFIDENCE BLOCK (7-Day Risk Free Guard) */}
-      <section className="py-16 max-w-6xl mx-auto px-4 space-y-10">
-        <div className="text-center space-y-2">
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight uppercase">
-            SUA COMPRA É <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">100% SEGURA</span>
-          </h2>
-          <p className="text-gray-400 text-xs md:text-sm font-sans font-light">
-            Transparência total. Sem pegadinhas, sem letras miúdas.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          
-          {/* Card 1: Acesso Imediato */}
-          <div className="bg-[#0a0a0a] border border-white/5 p-8 rounded-2xl flex flex-col items-center justify-between text-center space-y-6">
-            <div className="space-y-4 flex flex-col items-center">
-              <div className="h-14 w-14 rounded-xl bg-orange-600/10 border border-orange-500/20 flex items-center justify-center text-orange-500">
-                <Zap size={24} className="fill-orange-500/20" />
-              </div>
-              <h4 className="text-base font-bold text-white uppercase tracking-wider">Acesso Imediato</h4>
-              <p className="text-gray-400 text-xs font-sans font-light leading-relaxed">
-                Após o pagamento, você recebe acesso instantâneo à plataforma completa de leitura e simulações.
-              </p>
-            </div>
-            <div className="inline-flex items-center gap-1 bg-orange-600/10 border border-orange-500/20 rounded-full px-4 py-1.5 text-[10px] font-mono text-orange-400 font-bold uppercase tracking-wider">
-              <Zap size={10} className="animate-pulse" /> Liberação Automática
-            </div>
-          </div>
-
-          {/* Card 2: 7 Dias de Garantia (Highlighted) */}
-          <div className="bg-[#110a05] border-2 border-orange-500/40 p-8 rounded-2xl flex flex-col items-center justify-between text-center relative overflow-hidden space-y-6 shadow-[0_0_35px_rgba(234,88,12,0.15)]">
-            {/* Glowing effect inside */}
-            <div className="absolute -top-10 -right-10 w-28 h-28 bg-orange-500/10 blur-2xl rounded-full"></div>
-            
-            <div className="space-y-4 flex flex-col items-center w-full">
-              {/* Graphic Layout from the image: "DIAS DE 7 GARANTIA" inline */}
-              <div className="flex items-center gap-2">
-                <div className="text-right flex flex-col leading-none font-mono text-[10px] text-gray-400 font-bold tracking-widest uppercase">
-                  <span>DIAS</span>
-                  <span>DE</span>
-                </div>
-                <span className="text-5xl font-black text-orange-500 font-sans tracking-tight leading-none">7</span>
-                <div className="text-left leading-none font-mono text-[10px] text-gray-400 font-bold tracking-widest uppercase">
-                  <span>GARANTIA</span>
-                </div>
-              </div>
-
-              {/* 5 stars */}
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={12} className="text-orange-500 fill-orange-500" />
-                ))}
-              </div>
-
-              <h4 className="text-base font-extrabold text-orange-400 uppercase tracking-wider">Garantia Incondicional</h4>
-              <p className="text-gray-300 text-xs font-sans font-normal leading-relaxed">
-                Se por qualquer motivo você sentir que o material não é para você, terá até 7 dias de garantia para solicitar o reembolso total do valor pago.
-              </p>
-            </div>
-            
-            <div className="inline-flex items-center gap-1 bg-orange-500 text-white rounded-full px-5 py-1.5 text-[10px] font-mono font-black uppercase tracking-wider cursor-pointer shadow-[0_0_15px_rgba(234,88,12,0.3)]">
-              <ShieldCheck size={11} /> Risco Zero
-            </div>
-          </div>
-
-          {/* Card 3: Pagamento Seguro */}
-          <div className="bg-[#0a0a0a] border border-white/5 p-8 rounded-2xl flex flex-col items-center justify-between text-center space-y-6">
-            <div className="space-y-4 flex flex-col items-center">
-              <div className="h-14 w-14 rounded-xl bg-orange-600/10 border border-orange-500/20 flex items-center justify-center text-orange-500">
-                <Shield size={24} className="fill-orange-500/10" />
-              </div>
-              <h4 className="text-base font-bold text-white uppercase tracking-wider">Pagamento Seguro</h4>
-              <p className="text-gray-400 text-xs font-sans font-light leading-relaxed">
-                Processado pela Kiwify, plataforma líder em pagamentos digitais no Brasil, com segurança ponta a ponta.
-              </p>
-            </div>
-            <div className="inline-flex items-center gap-1 bg-orange-600/10 border border-orange-500/20 rounded-full px-4 py-1.5 text-[10px] font-mono text-orange-400 font-bold uppercase tracking-wider">
-              <ShieldCheck size={10} /> Ambiente Criptografado
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* 11. FAQ ACCORDION SECTION */}
-      <section className="py-12 bg-[#050505] border-t border-white/10">
         <FAQSection />
       </section>
 
-      {/* 12. BOTTOM CONVERSION GRID / CTA TABLE */}
-      <section className="bg-gradient-to-t from-orange-950/20 via-transparent to-transparent py-16 border-t border-white/10">
-        <div className="max-w-3xl mx-auto px-4 text-center space-y-6">
-          
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-500/10 text-orange-400 border border-orange-500/15 rounded-sm text-xs font-mono font-bold uppercase tracking-wider">
-            <Sparkles size={12} className="animate-pulse" /> SEU ACESSO É IMEDIATO POR 1 ANO
-          </span>
-
-          <h2 className="text-3xl md:text-6xl font-extrabold text-white tracking-tight uppercase leading-none">
-            Pronto Para Dominar o Mercado com Pilares de Inteligência Artificial?
-          </h2>
-
-          <p className="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
-            Abandone agora mesmo as mensalidades de dezenas de ferramentas absurdas. Domine a orquestração mestre sob os ensinamentos práticos do Método Multi-IA.
-          </p>
-
-          {/* Pricing tag list card inside sales offer */}
-          <div className="bg-[#0a0a0a] border-2 border-orange-600/40 rounded-sm p-6 md:p-8 max-w-md mx-auto space-y-5 shadow-[0_0_35px_rgba(234,88,12,0.15)] relative overflow-hidden">
-            
-            <div className="absolute top-0 right-0 py-1 px-3 bg-red-600 text-white font-black font-mono text-[9px] uppercase tracking-wider">
-              40% OFF HOJE
-            </div>
-
-            <div className="space-y-1">
-              <span className="text-xs text-orange-500 font-bold font-mono uppercase tracking-wider block">PREÇO PROMOCIONAL POR TEMPO LIMITADO</span>
-              <div className="text-xs text-gray-500 font-medium line-through font-mono uppercase">De R$ 163,34 por apenas:</div>
-              <div className="py-2">
-                <span className="text-xs uppercase font-mono tracking-wider font-semibold text-gray-400">12x de</span>
-                <div className="flex items-center justify-center gap-1.5 leading-none">
-                  <span className="text-sm font-bold text-orange-500 font-sans">R$</span>
-                  <span className="text-4xl md:text-6xl font-black text-white font-sans tracking-tighter leading-none">10,14</span>
-                </div>
-                <div className="text-xs text-gray-400 uppercase tracking-wider font-bold font-mono mt-1 pt-1.5 border-t border-white/5 inline-block">
-                  ou <span className="text-emerald-400">R$ 98,00</span> à vista no PIX/Cartão
-                </div>
-              </div>
-              <span className="text-[10px] text-gray-500 font-mono block">Sem assinaturas ou taxas ocultas • Acesso imediato</span>
-            </div>
-
-            <a
-               href="https://pay.kiwify.com.br/79zqIoV"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="cursor-pointer w-full bg-orange-600 hover:bg-orange-500 text-white font-black text-xs md:text-sm py-4 rounded-sm transition-all duration-300 shadow-[0_4px_20px_rgba(234,88,12,0.3)] hover:shadow-[0_0_25px_rgba(234,88,12,0.5)] uppercase tracking-tighter text-center inline-block"
-            >
-               QUERO GARANTIR MINHA INSCRIÇÃO AGORA
-            </a>
-
-            {/* List of security checks beneath pricing card */}
-            <div className="flex items-center justify-center gap-4 text-[10px] font-mono text-gray-500 pt-1 border-t border-white/5">
-              <span className="inline-flex items-center gap-1">
-                <ShieldCheck size={12} className="text-orange-500" /> Site Protegido
-              </span>
-              <span>•</span>
-              <span className="inline-flex items-center gap-1">
-                <Clock size={12} className="text-orange-500" /> Entrega Imediata
-              </span>
-            </div>
-
-          </div>
-
+      {/* CTA FINAL */}
+      <section className="py-16 max-w-2xl mx-auto px-4 text-center space-y-6">
+        <h2 className="text-3xl md:text-5xl font-black text-white uppercase leading-tight">
+          Quer usar IA para criar conteúdo ou gerar renda{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 italic">sem pagar mensalidade?</span>
+        </h2>
+        <p className="text-gray-400 text-sm font-light">Uma compra de R$ 98,00. Acesso por 1 ano. Resultado em 1 fim de semana.</p>
+        <a
+          href="https://pay.kiwify.com.br/79zqIoV"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-orange-600 hover:bg-orange-500 text-white font-black py-4 px-10 rounded-sm transition-all duration-300 text-sm uppercase tracking-tight shadow-[0_0_30px_rgba(234,88,12,0.3)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)]"
+        >
+          GARANTIR MEU ACESSO — R$ 98,00
+        </a>
+        <div className="flex items-center justify-center gap-4 text-[11px] font-mono text-gray-500 flex-wrap">
+          <span className="flex items-center gap-1"><ShieldCheck size={12} className="text-orange-500" /> Garantia 7 dias</span>
+          <span>·</span>
+          <span className="flex items-center gap-1"><Clock size={12} className="text-orange-500" /> Acesso 1 ano</span>
+          <span>·</span>
+          <span className="flex items-center gap-1"><Zap size={12} className="text-orange-500" /> Acesso imediato</span>
         </div>
       </section>
 
-      {/* 13. COMPLIANCE FOOTER & CONTACT DETAILS (100% Protects Google Ads account) */}
-      <footer className="bg-[#050505] border-t border-white/10 pt-12 pb-8 px-4 text-xs">
-        <div className="max-w-6xl mx-auto space-y-8">
-          
-          {/* Logo element plus simple navigation targets */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-white/10 pb-6 text-gray-500">
+      {/* FOOTER */}
+      <footer className="bg-[#050505] border-t border-white/10 py-8 px-4 text-xs text-gray-500">
+        <div className="max-w-5xl mx-auto space-y-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="h-4 w-4 rounded-sm bg-orange-600 flex items-center justify-center">
-                <Sparkles size={10} className="text-white font-extrabold inline" />
+                <Sparkles size={9} className="text-white" />
               </div>
-              <span className="font-sans text-xs font-black tracking-tighter text-white">MÉTODO MULTI-IA</span>
+              <span className="text-xs font-black tracking-tight text-white">MÉTODO MULTI-IA</span>
             </div>
-            
-            <div className="flex gap-4 md:gap-6 flex-wrap items-center justify-center text-[10px] font-mono font-bold tracking-wider">
-              <button onClick={() => setActiveLegalTab("privacy")} className="cursor-pointer text-gray-500 hover:text-white transition-colors">
-                POLÍTICA DE PRIVACIDADE
-              </button>
-              <span>•</span>
-              <button onClick={() => setActiveLegalTab("terms")} className="cursor-pointer text-gray-500 hover:text-white transition-colors">
-                TERMOS DE USO
-              </button>
-              <span>•</span>
-              <button onClick={() => setActiveLegalTab("disclaimer")} className="cursor-pointer text-gray-500 hover:text-white transition-colors">
-                DISCLAIMER DE GANHOS
-              </button>
+            <div className="flex gap-4 flex-wrap items-center justify-center text-[10px] font-mono font-bold tracking-wider">
+              <button onClick={() => setActiveLegalTab("privacy")} className="hover:text-white transition-colors cursor-pointer">PRIVACIDADE</button>
+              <span>·</span>
+              <button onClick={() => setActiveLegalTab("terms")} className="hover:text-white transition-colors cursor-pointer">TERMOS</button>
+              <span>·</span>
+              <button onClick={() => setActiveLegalTab("disclaimer")} className="hover:text-white transition-colors cursor-pointer">DISCLAIMER</button>
             </div>
           </div>
-
-          {/* Educational corporate credentials matching Google crawl policies */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start font-light text-gray-500 leading-relaxed text-[11px]">
-            <div className="space-y-2">
-              <div className="text-gray-400 font-bold uppercase font-mono text-[10px]">Identificação Corporativa</div>
-              <p>
-                 Este ebook interativo foi Desenvolvido por IDSystems.
-                <br />Atendimento por e-mail: <strong className="text-gray-400 font-bold select-all">idsystems17@gmail.com</strong>
-              </p>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="text-gray-400 font-bold uppercase font-mono text-[10px]">Aviso Legal Google Ads</div>
-              <p>
-                Este site não é afiliado ou homologado pelo Google Inc., Facebook Inc. ou TikTok Inc. Todas as referências e citações a papers reais do MIT, Harvard e USP servem puramente como fins de contexto acadêmico e validade de fonte conforme previstos na Lei Federal nº 9.610/98 de Direitos Autorais brasileira.
-              </p>
-            </div>
+          <div className="text-[11px] font-light leading-relaxed space-y-2">
+            <p>Desenvolvido por IDSystems · idsystems17@gmail.com</p>
+            <p>Os resultados variam de pessoa para pessoa conforme dedicação e aplicação. Não há garantia de lucro sem esforço.</p>
+            <p>Este site não é afiliado ao Google Inc., Facebook Inc. ou TikTok Inc.</p>
           </div>
-
-          {/* Compliance statement text footer */}
-          <div className="p-4 bg-[#0a0a0a] border border-white/5 text-center rounded-sm font-light text-gray-500 leading-normal">
-            Os resultados práticos apresentados no conteúdo variam de pessoa para pessoa, dependendo inteiramente da dedicação mestre, nível de aplicação prática das orquestrações e testes de campanha executados por cada aluno de forma diante. Não há garantia implícita de lucro garantido sem aplicação.
-          </div>
-
         </div>
       </footer>
 
-      {/* RENDER MODAL DIALOGS OVERLAYS */}
       <LegalModals
         isOpen={activeLegalTab !== null}
         onClose={() => setActiveLegalTab(null)}
         type={activeLegalTab || "privacy"}
       />
-
-      <CheckoutModal
-        isOpen={isCheckoutOpen}
-        onClose={() => setIsCheckoutOpen(false)}
-        initialPrice={checkoutPrice}
-      />
-
     </div>
   );
 }

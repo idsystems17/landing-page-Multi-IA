@@ -19,7 +19,7 @@ export default function FAQSection() {
     {
       id: 3,
       question: "Como funciona a Garantia de Reembolso Incondicional por 7 dias?",
-      answer: "Seu risco é zero. Ao se inscrever hoje, você recebe acesso completo por 1 ano a todas as aulas práticas, mega-prompts, geradores de roadmaps e apostilas mestre. Se em até 7 dias corridos você decidir que o conteúdo não é prático o suficiente para o seu projeto, basta clicar num botão na área de membros ou enviar um único e-mail para nosso canal de suporte. Devolveremos 100% do seu investimento, sem burocracia ou constrangimento."
+      answer: "Seu risco é zero. Ao se inscrever hoje, você recebe acesso completo por 1 ano a todas as aulas práticas, mega-prompts, geradores de prompts prontos e apostilas mestre. Se em até 7 dias corridos você decidir que o conteúdo não é prático o suficiente para o seu projeto, basta clicar num botão na área de membros ou enviar um único e-mail para nosso canal de suporte. Devolveremos 100% do seu investimento, sem burocracia ou constrangimento."
     },
     {
       id: 4,
