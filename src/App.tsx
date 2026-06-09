@@ -76,7 +76,7 @@ export default function App() {
             href="https://pay.kiwify.com.br/79zqIoV"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-black py-4 px-8 rounded-sm transition-all duration-300 text-sm uppercase tracking-tight flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.35)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group"
+            className="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white font-black py-5 px-10 rounded-sm transition-all duration-300 text-base md:text-lg uppercase tracking-tight flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(234,88,12,0.35)] hover:shadow-[0_0_45px_rgba(234,88,12,0.5)] group"
           >
             QUERO MEU ACESSO AGORA — R$ 98,00
             <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -209,10 +209,10 @@ export default function App() {
 
             <div className="space-y-1">
               <span className="text-xs text-gray-500 font-mono line-through block">De R$ 163,34 por apenas:</span>
-              <span className="text-sm font-bold text-gray-500 font-mono uppercase block">12x de</span>
+              <span className="text-lg font-black text-gray-400 font-mono uppercase block">12x de</span>
               <div className="flex items-center justify-center gap-1 leading-none">
-                <span className="text-2xl font-black text-orange-500 self-start mt-2">R$</span>
-                <span className="text-8xl md:text-9xl font-black text-white tracking-tighter leading-none">10,14</span>
+                <span className="text-3xl font-black text-orange-500 self-start mt-3">R$</span>
+                <span className="text-[9rem] md:text-[11rem] font-black text-white tracking-tighter leading-none">10,14</span>
               </div>
               <span className="text-sm text-gray-400 font-mono block pt-2">
                 ou <strong className="text-emerald-400">R$ 98,00</strong> à vista no PIX
@@ -223,7 +223,7 @@ export default function App() {
               href="https://pay.kiwify.com.br/79zqIoV"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full bg-orange-600 hover:bg-orange-500 text-white font-black text-sm py-4 rounded-sm transition-all duration-300 shadow-[0_4px_20px_rgba(234,88,12,0.3)] uppercase tracking-tight text-center inline-block"
+              className="w-full bg-orange-600 hover:bg-orange-500 text-white font-black text-base md:text-lg py-5 rounded-sm transition-all duration-300 shadow-[0_4px_20px_rgba(234,88,12,0.3)] uppercase tracking-tight text-center inline-block"
             >
               QUERO MEU ACESSO AGORA
             </a>
