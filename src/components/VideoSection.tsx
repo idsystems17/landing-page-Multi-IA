@@ -9,7 +9,7 @@ declare global {
 }
 
 const VIDEO_ID = "HBJYurOoVzo";
-const PACK_URL = "https://drive.google.com/uc?export=download&id=1FhIkxd7tJUwtEa2zc29XN2mwpVefVNYx";
+const PACK_URL = "/pack-prompts.pdf";
 const UNLOCK_AT = 0.8;
 
 export default function VideoSection() {
