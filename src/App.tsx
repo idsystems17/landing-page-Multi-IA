@@ -18,6 +18,7 @@ import CountdownTimer from "./components/CountdownTimer";
 import ReviewsSection from "./components/ReviewsSection";
 import FAQSection from "./components/FAQSection";
 import LegalModals from "./components/LegalModals";
+import VideoSection from "./components/VideoSection";
 
 // @ts-ignore
 import bundleMockupImg from "./assets/images/product_mockup_1780603159120.png";
@@ -152,7 +153,10 @@ export default function App() {
         </div>
       </section>
 
-      {/* 4. PROVA SOCIAL — depoimentos */}
+      {/* 4. VÍDEO DEMO + pack de prompts */}
+      <VideoSection />
+
+      {/* 5. PROVA SOCIAL — depoimentos */}
       <section className="bg-[#0a0a0a] border-y border-white/10 py-14">
         <div className="max-w-5xl mx-auto px-4 text-center mb-8 space-y-2">
           <span className="text-xs font-mono uppercase text-orange-400 tracking-widest">Quem já usou</span>
