@@ -92,12 +92,8 @@ export default function App() {
           <span className="flex items-center gap-1"><Zap size={13} className="text-orange-500" /> Acesso imediato</span>
         </div>
 
-        <div className="pt-4">
-          <img
-            src={bundleMockupImg}
-            alt="Ebook Método Multi-IA"
-            className="h-52 md:h-64 w-auto object-contain mx-auto"
-          />
+        <div className="pt-2 w-full">
+          <VideoSection compact />
         </div>
       </section>
 
@@ -153,8 +149,14 @@ export default function App() {
         </div>
       </section>
 
-      {/* 4. VÍDEO DEMO + pack de prompts */}
-      <VideoSection />
+      {/* 4. IMAGEM DO PRODUTO */}
+      <div className="py-8 text-center">
+        <img
+          src={bundleMockupImg}
+          alt="Ebook Método Multi-IA"
+          className="h-52 md:h-64 w-auto object-contain mx-auto opacity-90"
+        />
+      </div>
 
       {/* 5. PROVA SOCIAL — depoimentos */}
       <section className="bg-[#0a0a0a] border-y border-white/10 py-14">
