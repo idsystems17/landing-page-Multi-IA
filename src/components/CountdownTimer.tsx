@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
+import { Clock } from "lucide-react";
 
-export default function CountdownTimer() {
+interface Props {
+  compact?: boolean;
+}
+
+export default function CountdownTimer({ compact = false }: Props) {
   const [timeLeft, setTimeLeft] = useState({ hours: 2, minutes: 42, seconds: 19 });
 
   useEffect(() => {
@@ -31,6 +36,24 @@ export default function CountdownTimer() {
   }, []);
 
   const fmt = (n: number) => n.toString().padStart(2, "0");
+
+  if (compact) {
+    return (
+      <div className="hidden md:flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2">
+        <Clock size={13} className="text-amber-500 shrink-0" />
+        <span className="text-[10px] text-amber-600 font-semibold uppercase tracking-wide hidden lg:block">
+          Oferta expira em
+        </span>
+        <div className="flex items-center gap-1 font-mono font-bold text-amber-700 text-sm">
+          <span className="bg-white border border-amber-200 rounded-md px-1.5 py-0.5">{fmt(timeLeft.hours)}</span>
+          <span className="text-amber-400">:</span>
+          <span className="bg-white border border-amber-200 rounded-md px-1.5 py-0.5">{fmt(timeLeft.minutes)}</span>
+          <span className="text-amber-400">:</span>
+          <span className="bg-white border border-amber-200 rounded-md px-1.5 py-0.5">{fmt(timeLeft.seconds)}</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white border border-gray-200 rounded-2xl p-6 max-w-md mx-auto text-center shadow-sm">

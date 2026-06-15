@@ -41,8 +41,8 @@ export default function App() {
 
       {/* ── HEADER ── */}
       <header className="bg-white border-b border-gray-200 sticky top-9 z-40">
-        <div className="max-w-5xl mx-auto w-full px-4 py-3.5 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+        <div className="max-w-5xl mx-auto w-full px-4 py-3.5 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 shrink-0">
             <div className="w-7 h-7 rounded-lg bg-[#2563EB] flex items-center justify-center">
               <Sparkles size={13} className="text-white" />
             </div>
@@ -51,11 +51,14 @@ export default function App() {
               <span className="text-[10px] text-gray-400 ml-1.5 hidden sm:inline">Gerador com IA</span>
             </div>
           </div>
+
+          <CountdownTimer compact />
+
           <a
             href={KIWIFY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold text-xs py-2.5 px-5 rounded-xl transition-all shadow-sm"
+            className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold text-xs py-2.5 px-5 rounded-xl transition-all shadow-sm shrink-0"
           >
             Começar agora — R$98
           </a>
