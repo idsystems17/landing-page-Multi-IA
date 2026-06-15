@@ -15,6 +15,7 @@ import {
   PenLine,
   Rocket,
   BadgeCheck,
+  Megaphone,
 } from "lucide-react";
 
 import CountdownTimer from "./components/CountdownTimer";
@@ -289,20 +290,46 @@ export default function App() {
               </div>
             </div>
 
-            {/* Bônus */}
+            {/* Bônus 1 */}
             <div className="bg-white border border-gray-200 rounded-2xl p-6 space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center shrink-0">
                   <Layers size={18} className="text-emerald-600" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Bônus incluso</span>
+                  <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Bônus 1 incluso</span>
                   <h3 className="font-display font-bold text-[#1F2937]">Arsenal de IAs Gratuitas</h3>
                 </div>
               </div>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Catálogo completo com 8 ferramentas de IA gratuitas — Claude, ChatGPT, Gemini, Leonardo.AI, ElevenLabs e mais. Para cada uma: superpoder, limitação, especialidade e um prompt inicial pronto para copiar e usar. Perfeito para turbinar o e-book gerado com capa, revisão e divulgação.
+                Catálogo com 8 ferramentas de IA gratuitas — Claude, ChatGPT, Gemini, Leonardo.AI, ElevenLabs e mais. Cada uma com superpoder, limitação e prompt inicial pronto para copiar. Turbine seu e-book com capa, revisão e divulgação profissional.
               </p>
+            </div>
+
+            {/* Bônus 2 */}
+            <div className="bg-white border border-amber-200 rounded-2xl p-6 space-y-3 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-amber-400 text-white text-[9px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-xl">
+                NOVO
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center shrink-0">
+                  <Megaphone size={18} className="text-amber-600" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold text-amber-600 uppercase tracking-wider block">Bônus 2 incluso</span>
+                  <h3 className="font-display font-bold text-[#1F2937]">Como Monetizar seu E-book</h3>
+                </div>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Guia prático de 5 passos para transformar o e-book gerado em renda passiva: como formatar em PDF, criar uma capa profissional de graça, precificar entre R$27 e R$97, publicar na Kiwify ou Hotmart e divulgar no Instagram, Pinterest e WhatsApp — com prompts prontos para cada canal.
+              </p>
+              <div className="flex flex-wrap gap-2 pt-1">
+                {["Formatação PDF", "Capa com IA", "Estratégia de preço", "Publicação passo a passo", "Divulgação orgânica"].map((tag) => (
+                  <span key={tag} className="text-[10px] font-semibold bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-1 rounded-full">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -344,7 +371,8 @@ export default function App() {
                 "Acesso por 1 ano completo",
                 "Sem mensalidade ou taxas extras",
                 "Garantia incondicional de 7 dias",
-                "Bônus: Arsenal de IAs Gratuitas",
+                "Bônus 1: Arsenal de IAs Gratuitas",
+                "Bônus 2: Como Monetizar seu E-book",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-xs text-gray-600">
                   <Check size={13} className="text-[#2563EB] shrink-0" />
