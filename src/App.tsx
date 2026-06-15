@@ -76,7 +76,7 @@ export default function App() {
         </h1>
 
         <p className="text-gray-500 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
-          Pare de perder horas olhando para a tela em branco. Informe o tema e o público — a IA escreve o e-book inteiro, capítulo por capítulo, pronto para publicar e vender na Kiwify ou Hotmart.
+          Pare de perder horas olhando para a tela em branco. Informe o tema e o público — a IA escreve o e-book inteiro, capítulo por capítulo, pronto para publicar e vender na Kiwify, Hotmart ou qualquer outra plataforma.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
@@ -186,7 +186,7 @@ export default function App() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { icon: FileText, text: "Criar e-books para vender na Kiwify ou Hotmart" },
+              { icon: FileText, text: "Criar e-books para vender na Kiwify, Hotmart ou qualquer outra plataforma" },
               { icon: GraduationCap, text: "Produzir materiais educativos rapidamente" },
               { icon: Users, text: "Lançar um produto digital neste fim de semana" },
               { icon: Target, text: "Transformar qualquer ideia em conteúdo estruturado" },
