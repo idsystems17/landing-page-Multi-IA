@@ -1,89 +1,79 @@
 import { useState } from "react";
-import { HelpCircle, ChevronDown, Sparkles } from "lucide-react";
-import { FAQItem } from "../types";
+import { ChevronDown } from "lucide-react";
+
+const faqs = [
+  {
+    id: 1,
+    question: "Preciso saber escrever para usar o Gerador de E-book?",
+    answer: "Não. Você só informa o tema, o público-alvo e o tom que quer — a IA escreve todo o conteúdo. Introdução, capítulos com mais de 350 palavras cada, pontos-chave e conclusão. Você revisa, personaliza se quiser e publica. Nenhuma habilidade de escrita é necessária."
+  },
+  {
+    id: 2,
+    question: "O e-book gerado pela IA é original? Posso vender normalmente?",
+    answer: "Sim. O conteúdo é gerado especificamente para o seu tema, nicho e tom escolhidos — cada e-book é único. Você tem total liberdade para revisar, personalizar e comercializar na Kiwify, Hotmart ou qualquer plataforma de infoprodutos."
+  },
+  {
+    id: 3,
+    question: "Funciona para qualquer nicho ou área de conhecimento?",
+    answer: "Sim, para qualquer área. Emagrecimento, finanças pessoais, culinária, tecnologia, autoajuda, educação, relacionamentos, pets — qualquer tema pode ser transformado em e-book. O gerador se adapta ao público e ao tom que você escolher."
+  },
+  {
+    id: 4,
+    question: "Já tenho ChatGPT. Por que usar o Gerador de E-books?",
+    answer: "O ChatGPT é uma ferramenta geral — para usá-lo bem para e-books, você precisa saber escrever prompts, estruturar capítulos, definir o formato certo. Nosso gerador já faz tudo isso por você: formulário simples, estrutura profissional de e-book (sumário, introdução, capítulos com profundidade, conclusão e CTA), pronto para copiar e publicar. Nenhum conhecimento de IA necessário."
+  },
+  {
+    id: 5,
+    question: "Como funciona o pagamento único?",
+    answer: "Você paga R$98 uma única vez e tem acesso à ferramenta por 1 ano completo, sem mensalidade, sem cobrança recorrente. Nenhuma surpresa na fatura depois."
+  },
+  {
+    id: 6,
+    question: "Quanto tempo leva para gerar um e-book completo?",
+    answer: "Em média de 30 segundos a 2 minutos, dependendo do número de capítulos escolhido. Você preenche o formulário, clica em gerar e recebe o e-book completo na tela — pronto para copiar, personalizar e publicar."
+  },
+  {
+    id: 7,
+    question: "Como funciona a garantia de 7 dias?",
+    answer: "Seu risco é zero. Se em até 7 dias corridos você achar que a ferramenta não serve para o seu projeto, basta enviar um e-mail e devolvemos 100% do valor. Sem perguntas, sem burocracia."
+  }
+];
 
 export default function FAQSection() {
   const [openId, setOpenId] = useState<number | null>(null);
 
-  const faqs: FAQItem[] = [
-    {
-      id: 1,
-      question: "Eu realmente não vou precisar pagar nenhuma assinatura de Inteligência Artificial?",
-      answer: "Exatamente. Todo o pilar lógico do E-book Método Multi-IA baseia-se na orquestração complementar de ferramentas gratuitas. Você vai aprender a usar as versões gratuitas das principais Inteligências Artificiais em sinergia, obtendo resultados superiores aos de quem simplesmente copia e cola prompts genéricos em uma única ferramenta premium. Os melhores geradores de imagem e editores de vídeo inteligentes do mercado também serão utilizados em seus planos gratuitos."
-    },
-    {
-      id: 2,
-      question: "Preciso ter conhecimento avançado, saber programar ou entender de tecnologia?",
-      answer: "Absolutamente não. A metodologia foi desenvolvida didaticamente passo a passo em tópicos práticos para criadores, redatores, afiliados e profissionais liberais. Se você sabe abrir um navegador de internet, enviar mensagens e acompanhar tutoriais simples na tela, você já possui pré-requisito total para dominar a orquestração de IAs."
-    },
-    {
-      id: 3,
-      question: "Como funciona a Garantia de Reembolso Incondicional por 7 dias?",
-      answer: "Seu risco é zero. Ao se inscrever hoje, você recebe acesso completo por 1 ano a todas as aulas práticas, mega-prompts, geradores de prompts prontos e apostilas mestre. Se em até 7 dias corridos você decidir que o conteúdo não é prático o suficiente para o seu projeto, basta clicar num botão na área de membros ou enviar um único e-mail para nosso canal de suporte. Devolveremos 100% do seu investimento, sem burocracia ou constrangimento."
-    },
-    {
-      id: 4,
-      question: "Quanto tempo eu preciso me dedicar para ver os primeiros resultados?",
-      answer: "Geralmente os leitores que se dedicam de 30 a 45 minutos diários conseguem concluir a orquestração inicial do seu primeiro e-book em menos de 72 horas. Os roteiros de canais dark para vídeos virais podem ser gerados e postados no mesmo dia, aplicando os moldes do Módulo 2."
-    },
-    {
-      id: 5,
-      question: "O produto final gerado pelas IAs é comercialmente exclusivo?",
-      answer: "Sim. Como você aprenderá a usar múltiplos geradores independentes (um valida os fatos, um cria ideias, o outro reescreve com filtros de humanização literária), o resultado textual é 100% autêntico e livre de plágio ou detecção robótica, garantindo que você registre os direitos autorais com total segurança e profissionalismo."
-    }
-  ];
-
-  const handleToggle = (id: number) => {
-    setOpenId(openId === id ? null : id);
-  };
-
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8">
-      <div className="text-center mb-8">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-600/10 text-orange-400 border border-orange-600/25 rounded-sm text-xs font-mono font-bold tracking-widest uppercase mb-3">
-          <HelpCircle size={12} /> SUPORTE E DUVIDAS
-        </span>
-        <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight uppercase">
-          Perguntas Frequentes Sobre o E-book
-        </h3>
-        <p className="text-gray-400 text-xs md:text-sm mt-2 max-w-xl mx-auto font-sans font-light">
-          Tem alguma dúvida residual? Separamos as principais respostas transparentes reunidas para lhe dar máxima convicção.
-        </p>
-      </div>
-
-      <div className="space-y-3">
+    <div className="w-full max-w-3xl mx-auto px-4">
+      <div className="space-y-2">
         {faqs.map((faq) => {
           const isOpen = openId === faq.id;
           return (
             <div
               key={faq.id}
-              className={`bg-black rounded-sm border transition-all duration-300 overflow-hidden ${
-                isOpen
-                  ? "border-orange-500/40 shadow-[0_0_15px_rgba(234,88,12,0.05)]"
-                  : "border-white/5 hover:border-white/10"
+              className={`bg-white rounded-xl border transition-all duration-200 overflow-hidden ${
+                isOpen ? "border-[#2563EB]/30 shadow-sm" : "border-gray-200 hover:border-gray-300"
               }`}
             >
               <button
-                onClick={() => handleToggle(faq.id)}
-                className="w-full flex items-center justify-between p-5 text-left focus:outline-none cursor-pointer"
+                onClick={() => setOpenId(isOpen ? null : faq.id)}
+                className="w-full flex items-center justify-between p-5 text-left cursor-pointer"
               >
-                <span className="text-xs md:text-sm font-bold font-sans text-gray-200 hover:text-white transition-colors pr-4 uppercase tracking-tight">
+                <span className="text-sm font-semibold text-[#1F2937] pr-4 leading-snug">
                   {faq.question}
                 </span>
-                <span className={`p-1.5 rounded-sm border border-white/10 bg-[#0a0a0a] text-gray-400 transition-transform duration-300 shrink-0 ${isOpen ? "rotate-180 text-orange-500 border-orange-500/20" : ""}`}>
-                  <ChevronDown size={14} />
+                <span className={`shrink-0 w-6 h-6 rounded-full border flex items-center justify-center transition-all duration-200 ${
+                  isOpen ? "bg-[#2563EB] border-[#2563EB] text-white rotate-180" : "border-gray-300 text-gray-400"
+                }`}>
+                  <ChevronDown size={13} />
                 </span>
               </button>
-
-              <div
-                className={`transition-all duration-300 ease-in-out font-sans ${
-                  isOpen ? "max-h-[300px] border-t border-white/5 p-5 opacity-100 bg-[#0a0a0a]/50" : "max-h-0 opacity-0 pointer-events-none"
-                }`}
-              >
-                <p className="text-xs md:text-sm text-gray-400 leading-relaxed font-light">
-                  {faq.answer}
-                </p>
-              </div>
+              {isOpen && (
+                <div className="px-5 pb-5 border-t border-gray-100">
+                  <p className="text-sm text-gray-600 leading-relaxed pt-4">
+                    {faq.answer}
+                  </p>
+                </div>
+              )}
             </div>
           );
         })}
