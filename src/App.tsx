@@ -47,8 +47,8 @@ export default function App() {
               <Sparkles size={13} className="text-white" />
             </div>
             <div>
-              <span className="text-sm font-display font-bold text-[#1F2937]">Multi-IA</span>
-              <span className="text-[10px] text-gray-400 ml-1.5 hidden sm:inline">Gerador de E-books</span>
+              <span className="text-sm font-display font-bold text-[#1F2937]">E-book Pronto</span>
+              <span className="text-[10px] text-gray-400 ml-1.5 hidden sm:inline">Gerador com IA</span>
             </div>
           </div>
           <a
@@ -415,8 +415,8 @@ export default function App() {
               <div className="w-6 h-6 rounded-lg bg-[#2563EB] flex items-center justify-center">
                 <Sparkles size={11} className="text-white" />
               </div>
-              <span className="text-sm font-display font-bold text-[#1F2937]">Multi-IA</span>
-              <span className="text-xs text-gray-400">— Gerador de E-books</span>
+              <span className="text-sm font-display font-bold text-[#1F2937]">E-book Pronto</span>
+              <span className="text-xs text-gray-400">— Gerador com IA</span>
             </div>
             <div className="flex gap-4 text-[10px] font-semibold text-gray-400 tracking-wider uppercase">
               <button onClick={() => setActiveLegalTab("privacy")} className="hover:text-[#2563EB] transition-colors cursor-pointer">Privacidade</button>
